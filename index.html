@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>50 Unicorn Startup Ideas 2025–2030</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #0a0a0f;
+  --paper: #f2ede6;
+  --cream: #e8e0d4;
+  --gold: #c9a84c;
+  --rust: #b85c38;
+  --slate: #3d4a5c;
+  --sage: #5a7a6a;
+  --lavender: #7a6a9a;
+  --teal: #2a7a7a;
+  --crimson: #8a2a3a;
+  --border: rgba(10,10,15,0.12);
+  --shadow: rgba(10,10,15,0.08);
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+/* Grain texture */
+body::after {
+  content:'';
+  position:fixed;
+  inset:0;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23g)' opacity='0.06'/%3E%3C/svg%3E");
+  pointer-events:none;
+  z-index:9999;
+  opacity:0.5;
+}
+
+/* ─── HEADER ─── */
+.masthead {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 0 60px;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.masthead-bg {
+  position:absolute;
+  inset:0;
+  background:
+    repeating-linear-gradient(0deg, transparent, transparent 79px, rgba(242,237,230,0.04) 80px),
+    repeating-linear-gradient(90deg, transparent, transparent 79px, rgba(242,237,230,0.04) 80px);
+}
+
+.masthead-accent {
+  position:absolute;
+  top:0; right:0;
+  width:50%;
+  height:100%;
+  background: radial-gradient(ellipse 80% 60% at 80% 30%, rgba(201,168,76,0.12) 0%, transparent 70%);
+}
+
+.masthead-top {
+  position:absolute;
+  top:40px; left:60px; right:60px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+}
+
+.pub-name {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size:11px;
+  letter-spacing:3px;
+  color:rgba(242,237,230,0.4);
+  text-transform:uppercase;
+}
+
+.pub-date {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size:11px;
+  letter-spacing:2px;
+  color:rgba(242,237,230,0.3);
+}
+
+.masthead-content {
+  position:relative;
+  z-index:1;
+  padding-bottom:80px;
+}
+
+.edition-tag {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size:10px;
+  letter-spacing:4px;
+  color: var(--gold);
+  text-transform:uppercase;
+  margin-bottom:24px;
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.edition-tag::before {
+  content:'';
+  display:inline-block;
+  width:30px;
+  height:1px;
+  background:var(--gold);
+}
+
+h1.main-title {
+  font-family:'Bebas Neue', sans-serif;
+  font-size: clamp(80px, 12vw, 180px);
+  line-height:0.88;
+  letter-spacing:2px;
+  color: var(--paper);
+  margin-bottom:8px;
+}
+
+h1.main-title .gold { color:var(--gold); }
+h1.main-title .outline {
+  -webkit-text-stroke: 1px rgba(242,237,230,0.3);
+  color:transparent;
+}
+
+.masthead-sub {
+  margin-top:32px;
+  font-family:'Instrument Serif', serif;
+  font-style:italic;
+  font-size:22px;
+  color:rgba(242,237,230,0.6);
+  max-width:600px;
+  line-height:1.6;
+}
+
+.masthead-stats {
+  display:flex;
+  gap:0;
+  margin-top:60px;
+  border-top:1px solid rgba(242,237,230,0.1);
+  padding-top:32px;
+}
+
+.mstat {
+  flex:1;
+  padding-right:40px;
+  border-right:1px solid rgba(242,237,230,0.08);
+  margin-right:40px;
+}
+.mstat:last-child { border-right:none; margin-right:0; }
+
+.mstat-n {
+  font-family:'Bebas Neue', sans-serif;
+  font-size:48px;
+  color:var(--gold);
+  line-height:1;
+}
+
+.mstat-l {
+  font-family:'IBM Plex Mono', monospace;
+  font-size:9px;
+  letter-spacing:2px;
+  color:rgba(242,237,230,0.3);
+  text-transform:uppercase;
+  margin-top:4px;
+}
+
+/* ─── FILTER BAR ─── */
+.filter-bar {
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:var(--ink);
+  border-bottom:1px solid rgba(242,237,230,0.08);
+  padding:0 60px;
+  display:flex;
+  align-items:center;
+  gap:0;
+  overflow-x:auto;
+  scrollbar-width:none;
+}
+.filter-bar::-webkit-scrollbar { display:none; }
+
+.filter-btn {
+  flex-shrink:0;
+  font-family:'IBM Plex Mono', monospace;
+  font-size:9px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  padding:16px 20px;
+  background:none;
+  border:none;
+  color:rgba(242,237,230,0.35);
+  cursor:pointer;
+  transition:all 0.2s;
+  border-bottom:2px solid transparent;
+  white-space:nowrap;
+}
+
+.filter-btn:hover { color:rgba(242,237,230,0.7); }
+.filter-btn.active { color:var(--gold); border-bottom-color:var(--gold); }
+
+/* ─── SEARCH ─── */
+.search-wrap {
+  padding:40px 60px 0;
+  display:flex;
+  align-items:center;
+  gap:16px;
+}
+
+.search-input {
+  flex:1;
+  max-width:500px;
+  background:var(--cream);
+  border:1px solid var(--border);
+  border-radius:2px;
+  padding:12px 20px;
+  font-family:'IBM Plex Mono', monospace;
+  font-size:12px;
+  color:var(--ink);
+  outline:none;
+  transition:border-color 0.2s;
+}
+.search-input::placeholder { color:rgba(10,10,15,0.3); }
+.search-input:focus { border-color:var(--gold); }
+
+.results-count {
+  font-family:'IBM Plex Mono', monospace;
+  font-size:10px;
+  color:rgba(10,10,15,0.4);
+  letter-spacing:1px;
+}
+
+/* ─── GRID ─── */
+.grid-wrap {
+  padding:40px 60px 100px;
+}
+
+.ideas-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fill, minmax(520px, 1fr));
+  gap:20px;
+}
+
+/* ─── CARD ─── */
+.card {
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:2px;
+  overflow:hidden;
+  transition:box-shadow 0.3s, transform 0.3s;
+  position:relative;
+}
+
+.card:hover {
+  box-shadow:0 12px 40px var(--shadow), 0 0 0 1px var(--border);
+  transform:translateY(-2px);
+}
+
+.card-stripe {
+  height:3px;
+  width:100%;
+}
+
+.card-head {
+  padding:24px 24px 18px;
+  border-bottom:1px solid var(--border);
+  display:flex;
+  gap:16px;
+  align-items:flex-start;
+}
+
+.card-num-badge {
+  width:36px;
+  height:36px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family:'IBM Plex Mono', monospace;
+  font-size:10px;
+  font-weight:500;
+  flex-shrink:0;
+  margin-top:2px;
+}
+
+.card-head-text { flex:1; min-width:0; }
+
+.card-name {
+  font-family:'Bebas Neue', sans-serif;
+  font-size:26px;
+  letter-spacing:1px;
+  line-height:1;
+  margin-bottom:4px;
+}
+
+.card-tagline {
+  font-size:12px;
+  color:rgba(10,10,15,0.5);
+  font-weight:300;
+  line-height:1.5;
+}
+
+.card-tags {
+  display:flex;
+  flex-wrap:wrap;
+  gap:4px;
+  margin-top:8px;
+}
+
+.tag {
+  font-family:'IBM Plex Mono', monospace;
+  font-size:8px;
+  letter-spacing:1.5px;
+  padding:3px 7px;
+  border-radius:1px;
+  text-transform:uppercase;
+}
+
+/* ─── CARD SECTIONS ─── */
+.card-sections { padding:0; }
+
+.section-row {
+  padding:14px 24px;
+  border-bottom:1px solid rgba(10,10,15,0.06);
+}
+.section-row:last-child { border-bottom:none; }
+
+.s-label {
+  font-family:'IBM Plex Mono', monospace;
+  font-size:8px;
+  letter-spacing:2.5px;
+  text-transform:uppercase;
+  margin-bottom:6px;
+  color:rgba(10,10,15,0.35);
+}
+
+.s-text {
+  font-size:13px;
+  line-height:1.7;
+  color:rgba(10,10,15,0.75);
+  font-weight:300;
+}
+
+/* ─── ACCORDION ─── */
+.acc-toggle {
+  width:100%;
+  background:rgba(10,10,15,0.02);
+  border:none;
+  border-top:1px solid var(--border);
+  padding:12px 24px;
+  font-family:'IBM Plex Mono', monospace;
+  font-size:8px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:rgba(10,10,15,0.4);
+  cursor:pointer;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  transition:all 0.2s;
+}
+.acc-toggle:hover { color:rgba(10,10,15,0.7); background:rgba(10,10,15,0.04); }
+.acc-arrow { font-size:10px; transition:transform 0.3s; }
+.acc-arrow.open { transform:rotate(180deg); }
+
+.acc-body {
+  max-height:0;
+  overflow:hidden;
+  transition:max-height 0.5s cubic-bezier(0.4,0,0.2,1);
+}
+.acc-body.open { max-height:1000px; }
+
+/* ─── UNICORN ROW ─── */
+.unicorn-row {
+  padding:16px 24px;
+  display:flex;
+  align-items:flex-start;
+  gap:12px;
+  border-top:1px solid var(--border);
+  background:rgba(201,168,76,0.04);
+}
+.u-icon { font-size:20px; flex-shrink:0; }
+.u-label {
+  font-family:'IBM Plex Mono', monospace;
+  font-size:8px;
+  letter-spacing:2px;
+  color:var(--gold);
+  text-transform:uppercase;
+  margin-bottom:4px;
+}
+.u-text { font-size:12px; line-height:1.7; color:rgba(10,10,15,0.65); font-weight:300; }
+
+/* ─── RISK PILLS ─── */
+.risk-pill {
+  display:inline-block;
+  padding:2px 8px;
+  border-radius:2px;
+  font-family:'IBM Plex Mono', monospace;
+  font-size:9px;
+  letter-spacing:1px;
+  margin:2px 3px 2px 0;
+}
+.r-low { background:rgba(90,122,106,0.12); color:var(--sage); }
+.r-med { background:rgba(201,168,76,0.15); color:#9a7828; }
+.r-high { background:rgba(184,92,56,0.12); color:var(--rust); }
+
+/* ─── HIDDEN ─── */
+.card.hidden { display:none; }
+
+/* ─── FOOTER ─── */
+footer {
+  background:var(--ink);
+  color:rgba(242,237,230,0.3);
+  text-align:center;
+  padding:60px 40px;
+  font-family:'IBM Plex Mono', monospace;
+  font-size:10px;
+  letter-spacing:2px;
+}
+
+/* ─── SCROLL TOP ─── */
+.scroll-top {
+  position:fixed;
+  bottom:40px;
+  right:40px;
+  width:44px;
+  height:44px;
+  background:var(--ink);
+  color:var(--gold);
+  border:none;
+  border-radius:50%;
+  font-size:18px;
+  cursor:pointer;
+  opacity:0;
+  transform:translateY(10px);
+  transition:all 0.3s;
+  z-index:200;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.scroll-top.visible { opacity:1; transform:translateY(0); }
+
+/* ─── RESPONSIVE ─── */
+@media(max-width:700px){
+  .masthead, .filter-bar, .search-wrap, .grid-wrap { padding-left:20px; padding-right:20px; }
+  .ideas-grid { grid-template-columns:1fr; }
+  h1.main-title { font-size:64px; }
+  .masthead-top { left:20px; right:20px; }
+  .masthead { padding:0 20px; }
+  .masthead-stats { flex-wrap:wrap; gap:24px; }
+  .mstat { border-right:none; margin-right:0; padding-right:0; }
+}
+
+/* Animations */
+@keyframes fadeSlideUp {
+  from { opacity:0; transform:translateY(30px); }
+  to { opacity:1; transform:translateY(0); }
+}
+.masthead-content > * {
+  animation: fadeSlideUp 0.8s ease both;
+}
+.edition-tag { animation-delay:0.1s; }
+h1.main-title { animation-delay:0.25s; }
+.masthead-sub { animation-delay:0.4s; }
+.masthead-stats { animation-delay:0.55s; }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<header class="masthead">
+  <div class="masthead-bg"></div>
+  <div class="masthead-accent"></div>
+  <div class="masthead-top">
+    <span class="pub-name">Frontier Ventures Intelligence</span>
+    <span class="pub-date">Vol. II · 2025–2030</span>
+  </div>
+  <div class="masthead-content">
+    <div class="edition-tag">Unicorn Startup Report · Second Edition</div>
+    <h1 class="main-title">
+      <span class="gold">50</span><br>
+      FUTURE<br>
+      <span class="outline">STARTUPS</span>
+    </h1>
+    <p class="masthead-sub">Unconventional, capital-efficient, globally scalable — built for founders who are 3–5 years ahead of everyone else.</p>
+    <div class="masthead-stats">
+      <div class="mstat">
+        <div class="mstat-n">50</div>
+        <div class="mstat-l">Bold Ideas</div>
+      </div>
+      <div class="mstat">
+        <div class="mstat-n">12</div>
+        <div class="mstat-l">Tech Verticals</div>
+      </div>
+      <div class="mstat">
+        <div class="mstat-n">$5T+</div>
+        <div class="mstat-l">Combined TAM</div>
+      </div>
+      <div class="mstat">
+        <div class="mstat-n">0</div>
+        <div class="mstat-l">Generic Ideas</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- FILTER BAR -->
+<div class="filter-bar" id="filterBar">
+  <button class="filter-btn active" data-cat="all">All 50</button>
+  <button class="filter-btn" data-cat="AI">AI</button>
+  <button class="filter-btn" data-cat="Climate">Climate</button>
+  <button class="filter-btn" data-cat="HealthTech">HealthTech</button>
+  <button class="filter-btn" data-cat="Web3">Web3</button>
+  <button class="filter-btn" data-cat="GovTech">GovTech</button>
+  <button class="filter-btn" data-cat="AgriTech">AgriTech</button>
+  <button class="filter-btn" data-cat="EdTech">EdTech</button>
+  <button class="filter-btn" data-cat="FinTech">FinTech</button>
+  <button class="filter-btn" data-cat="Robotics">Robotics</button>
+  <button class="filter-btn" data-cat="Biotech">Biotech</button>
+  <button class="filter-btn" data-cat="Cybersecurity">Cybersecurity</button>
+  <button class="filter-btn" data-cat="Spatial">Spatial</button>
+</div>
+
+<!-- SEARCH -->
+<div class="search-wrap">
+  <input class="search-input" type="text" id="searchInput" placeholder="Search ideas, problems, technologies...">
+  <span class="results-count" id="resultsCount">50 ideas</span>
+</div>
+
+<!-- GRID -->
+<div class="grid-wrap">
+  <div class="ideas-grid" id="grid"></div>
+</div>
+
+<footer>
+  FRONTIER VENTURES INTELLIGENCE · 50 UNICORN STARTUP IDEAS · 2025–2030 EDITION<br><br>
+  Built for bold founders. Think deep. Start lean. Scale globally.
+</footer>
+
+<button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+const PALETTE = {
+  AI:           { stripe:'#6c63ff', badge:'rgba(108,99,255,0.12)', badgeText:'#5a52d0', tagBg:'rgba(108,99,255,0.08)', tagText:'#5a52d0' },
+  Climate:      { stripe:'#2a7a4a', badge:'rgba(42,122,74,0.12)',  badgeText:'#1e6040', tagBg:'rgba(42,122,74,0.08)',  tagText:'#1e6040' },
+  HealthTech:   { stripe:'#b85c38', badge:'rgba(184,92,56,0.12)',  badgeText:'#8a3a1a', tagBg:'rgba(184,92,56,0.08)',  tagText:'#8a3a1a' },
+  Web3:         { stripe:'#c9a84c', badge:'rgba(201,168,76,0.15)', badgeText:'#7a5e10', tagBg:'rgba(201,168,76,0.1)', tagText:'#7a5e10' },
+  GovTech:      { stripe:'#3d4a5c', badge:'rgba(61,74,92,0.12)',   badgeText:'#2a3545', tagBg:'rgba(61,74,92,0.08)',   tagText:'#2a3545' },
+  AgriTech:     { stripe:'#5a7a2a', badge:'rgba(90,122,42,0.12)',  badgeText:'#3a5a1a', tagBg:'rgba(90,122,42,0.08)',  tagText:'#3a5a1a' },
+  EdTech:       { stripe:'#7a4a8a', badge:'rgba(122,74,138,0.12)', badgeText:'#5a2a7a', tagBg:'rgba(122,74,138,0.08)', tagText:'#5a2a7a' },
+  FinTech:      { stripe:'#2a6a7a', badge:'rgba(42,106,122,0.12)', badgeText:'#1a4a5a', tagBg:'rgba(42,106,122,0.08)', tagText:'#1a4a5a' },
+  Robotics:     { stripe:'#7a2a2a', badge:'rgba(122,42,42,0.12)',  badgeText:'#5a1a1a', tagBg:'rgba(122,42,42,0.08)',  tagText:'#5a1a1a' },
+  Biotech:      { stripe:'#2a7a7a', badge:'rgba(42,122,122,0.12)', badgeText:'#1a5a5a', tagBg:'rgba(42,122,122,0.08)', tagText:'#1a5a5a' },
+  Cybersecurity:{ stripe:'#1a1a4a', badge:'rgba(26,26,74,0.12)',   badgeText:'#0a0a3a', tagBg:'rgba(26,26,74,0.08)',   tagText:'#0a0a3a' },
+  Spatial:      { stripe:'#6a4a2a', badge:'rgba(106,74,42,0.12)',  badgeText:'#4a2a0a', tagBg:'rgba(106,74,42,0.08)',  tagText:'#4a2a0a' },
+};
+
+const ideas = [
+  // ── 1 ──
+  {num:1,name:"NeuralFarm",tagline:"Hyper-local micro-climate AI crop intelligence for sub-2-acre farmers",cat:"AgriTech",tags:["AI","IoT","Climate"],
+   problem:"India's 120M+ marginal farmers lose 30–40% of crops annually to micro-climate anomalies. National forecasts don't work at village scale. No affordable solution exists below 500-acre farm size.",
+   customers:"Smallholder farmers (India, Africa, SE Asia), agri-input companies, crop insurers, state agriculture departments.",
+   unique:"AI-driven micro-climate advisory at <1 acre granularity required cheap IoT + vernacular voice AI — a stack that only became viable in late 2024 via Bhashini + low-cost BLE sensors.",
+   revenue:"₹499/season WhatsApp SaaS. Agri-data licensing to insurers. B2G via PM Kisan integration. Input retailer white-label.",
+   mvp:"Deploy 50 soil+weather sensors (₹800 each) in one village. Build WhatsApp voice bot using Sarvam AI for vernacular crop advisory. Partner with one input retailer.",
+   scale:"10 crops, 5 states Year 1. Sell anonymized data to insurers Year 2. 10M farmers across South Asia by Year 5.",
+   risks:[["Farmer adoption","med"],["Hardware durability","med"],["Govt competition","low"]],
+   unicorn:"146M Indian farm holdings at ₹499/season + data licensing to insurers could reach $200M+ ARR. Climate change makes this increasingly non-negotiable."},
+
+  // ── 2 ──
+  {num:2,name:"GhostWorker",tagline:"AI agent 'employee' for India's 63M micro-businesses on WhatsApp",cat:"AI",tags:["AI Agents","WhatsApp","MSME"],
+   problem:"500M micro-business owners globally (kirana, salons, repair shops) can't afford even part-time admin help for bookkeeping, GST, scheduling, and customer follow-ups. Admin work kills their growth.",
+   customers:"Kirana stores, salons, repair shops, local service businesses across India's 640K villages and Tier-2/3 cities.",
+   unique:"AI agent frameworks (LangGraph, CrewAI) only matured in 2024. No one has built a vernacular WhatsApp-native AI staff stack for India's unorganised sector — the revenue per user looks low until you see the 63M volume.",
+   revenue:"₹299/month per business. Upsell GST filing, payments. FMCG behavioral data licensing. NBFC lending referral.",
+   mvp:"WhatsApp-native AI for 100 kirana stores: handles inventory reminders, customer birthday SMSes, UPI follow-ups. Charge ₹99/month. Prove retention.",
+   scale:"Partner with Jio/Airtel for bundled distribution. 100K businesses Year 2. Expand to Indonesia, Egypt, Nigeria by Year 4.",
+   risks:[["WhatsApp policy risk","high"],["LLM cost at scale","med"],["Monetization patience","med"]],
+   unicorn:"63M Indian MSMEs × ₹299/month = $2.8B TAM. Embedded NBFC lending turns this into a financial super-app for real Bharat."},
+
+  // ── 3 ──
+  {num:3,name:"SkintelliX",tagline:"Dermatology AI trained on Indian skin tones for the 1.4B without a dermatologist",cat:"HealthTech",tags:["Vision AI","Biotech","B2G"],
+   problem:"India has 1 dermatologist per 250,000 people. 70% of rural skin conditions go undiagnosed for years. Existing AI tools are trained on Western skin tones and miss South Asian presentations.",
+   customers:"ASHA workers, rural PHCs, community pharmacies, state health departments, Ayushman Bharat network.",
+   unique:"No one has built an offline-capable, Indian-skin-tone-trained, sub-₹20/scan dermatology model sized for PHC budgets. Training data for Indian dermatology is genuinely scarce — a moat.",
+   revenue:"₹15/scan B2G through Ayushman Bharat. ₹999/month SaaS for pharmacy chains. Insurance risk stratification API. Direct patient premium reports.",
+   mvp:"Fine-tune a vision model on Indian skin datasets (hospital partnerships + open-source). Deploy offline mobile app for 200 ASHA workers in one district. Measure diagnostic accuracy vs referral rates.",
+   scale:"5 states, 10K ASHA workers Year 1. Integrate with eHospital NIC Year 3. 50M scans/year Year 5. Replicate in Sub-Saharan Africa (same skin tone gap, worse ratios).",
+   risks:[["CDSCO regulatory path","high"],["Training data quality","med"],["Liability framework","med"]],
+   unicorn:"India's digital health market = $21B by 2030. A govt-endorsed AI dermatology layer in 500K PHCs could command $500M+ in B2G contracts."},
+
+  // ── 4 ──
+  {num:4,name:"VaultMind",tagline:"On-device private LLM in a box for enterprises afraid of cloud AI leaks",cat:"Cybersecurity",tags:["On-device AI","Privacy","Enterprise"],
+   problem:"Enterprises block LLM access because sensitive IP leaks to OpenAI/Google servers. Private cloud deployments cost $500K+. The 100–2000 employee mid-market is completely unserved.",
+   customers:"Law firms, pharma R&D, BFSI institutions, defense contractors, any regulated-industry mid-market.",
+   unique:"Apple Silicon, AMD Ryzen AI, Qualcomm Snapdragon NPUs now make 7B–13B model inference on-device commercially viable (2024 hardware tipping point). No one has productized this with enterprise SSO + audit logs.",
+   revenue:"$999/seat/year SaaS. Enterprise $150K+ annual contract. Hardware margin on pre-configured NPU bundles.",
+   mvp:"Package Ollama + LlamaIndex + fine-tuned Mistral 7B into a one-click Mac/Windows installer. Add SSO + audit log UI. Sell 5 law firms at $5K pilot.",
+   scale:"50 enterprise pilots Year 1. Dell/HP hardware partnership Year 3. 5,000 global enterprise clients Year 5.",
+   risks:[["Open-source commoditization","high"],["Sales cycle length","med"],["Model quality vs cloud","med"]],
+   unicorn:"400K+ mid-market enterprises globally. Post-GDPR + DPDP India, data residency is compliance, not optional. 5% market at $50K ACV = $10B."},
+
+  // ── 5 ──
+  {num:5,name:"CarbonRupee",tagline:"Verified micro carbon credits for India's 90M smallholder farmers via satellite",cat:"Climate",tags:["Climate","Web3","AgriTech"],
+   problem:"Carbon credit minimum verification is 500 acres at $50K+ cost. India's 90M smallholders practicing regenerative farming are locked out of the $2B/year voluntary carbon market — they're invisible.",
+   customers:"Indian farmers, ESG-mandated corporations (Microsoft, Google, Stripe Frontier), carbon registries, NABARD.",
+   unique:"Three things converged in 2024: (1) ESG laws requiring 'high integrity' credits, (2) Sentinel-2 satellite biomass at 10m resolution, (3) cheap on-chain verification. No one has built the full smallholder aggregation + MRV stack.",
+   revenue:"15% commission on credit sales. Corporate buyer portfolio SaaS. NABARD co-financing for farmer onboarding. Reinsurer data API.",
+   mvp:"Aggregate 500 zero-till farmers in one district. Use Sentinel-2 open data to measure sequestration. Issue pooled credits on blockchain. Sell to one corporate buyer.",
+   scale:"50K farmers, 5 states Year 2. Become a recognized Indian carbon standard Year 3. 2M farmers, expand to Africa+SE Asia Year 5.",
+   risks:[["Carbon market volatility","high"],["Verification accuracy","med"],["Regulatory uncertainty","med"]],
+   unicorn:"5M Indian farmers at 1 ton/year at $20/ton = $2B credits; 15% commission = $300M ARR. Global voluntary carbon market projected at $50B by 2030."},
+
+  // ── 6 ──
+  {num:6,name:"MemoirAI",tagline:"Personalized AI companion that delays dementia through reminiscence therapy at scale",cat:"HealthTech",tags:["BioAI","Elder Care","Multimodal"],
+   problem:"57M Indians have dementia; 152M by 2050. No affordable, personalized early-intervention tool exists. Standard memory apps use generic puzzles — not the individual's own memories, which is what clinical reminiscence therapy requires.",
+   customers:"Families with early-stage dementia patients, geriatric care facilities, neurologists, health insurers.",
+   unique:"Multimodal AI analyzing personal photo libraries + voice recordings to generate hyper-personalized memory exercises only became possible in 2024. Clinically grounded (reminiscence therapy) but never automated at scale.",
+   revenue:"₹999/month family subscription. ₹300/resident/month B2B elder care. Pharma longitudinal cognitive-decline dataset. Insurance cognitive risk API.",
+   mvp:"WhatsApp flow where families upload 50 photos + voice clips. GPT-4V generates daily personalized memory prompts. Pilot 100 families at ₹499/month.",
+   scale:"Partner with Apollo/Fortis elder care Year 2. Build India's largest geriatric AI dataset Year 3. Expand to Japan (40M elderly), US, EU Year 5.",
+   risks:[["Medical device regulation","high"],["Efficacy proof burden","med"],["Sensitive data","med"]],
+   unicorn:"Global dementia care = $818B market. 1% digital intervention = $8B. Being the 'cognitive health companion' category leader before Big Pharma wakes up is generational."},
+
+  // ── 7 ──
+  {num:7,name:"SkillChain",tagline:"Blockchain-verified skill NFTs for India's 500M informal workers, no wallet needed",cat:"Web3",tags:["Web3","Skills","Blue Collar"],
+   problem:"500M Indian informal workers (welders, plumbers, electricians) have no verifiable skill proof. Contractors can't trust quality. Fake paper certificates cost the construction sector $40B/year in rework.",
+   customers:"Skilled tradespeople, construction contractors, infrastructure firms (L&T, DLF), MSDE, NSDC.",
+   unique:"Account abstraction (EIP-4337) in 2023–24 makes wallet-less NFT issuance via mobile number possible for the first time — the UX blocker that killed every previous attempt is now gone.",
+   revenue:"₹199/certificate issuance. ₹99/verification call. ₹4,999/month contractor subscription. MSDE govt grant per worker credentialed.",
+   mvp:"Partner with 3 ITIs. Issue skill NFTs to 1,000 graduates on Polygon using phone number as identity. Build WhatsApp verification bot for contractors. Charge ₹199/issuance.",
+   scale:"50 ITIs, 5 states Year 1. NSDC integration Year 2. India's national skill credentialing infrastructure Year 3. 50M credentials issued Year 5.",
+   risks:[["Govt adoption pace","med"],["Network effects required","high"],["Blockchain skepticism","med"]],
+   unicorn:"500M informal workers × ₹199 = ₹100B TAM. As India's construction boom continues, this becomes the Bloomberg of blue-collar verified talent."},
+
+  // ── 8 ──
+  {num:8,name:"DreamMap",tagline:"AI urban planning co-pilot for India's 4,000 municipalities that can't afford McKinsey",cat:"GovTech",tags:["Spatial AI","GovTech","Urban"],
+   problem:"India's 4,041 municipalities manage 500M urban residents but 95% lack capacity to do proper planning, flood-risk mapping, or infrastructure gap analysis. They pay ₹50L for static consultant PDFs.",
+   customers:"Municipal corporations, state urban development depts, World Bank/ADB funded projects, real estate developers.",
+   unique:"Open govt data (census, GSMAP) + satellite imagery + spatial-reasoning LLMs is a brand-new (2024) capability stack. No startup is targeting the 4K ULB capacity gap with AI-native tooling.",
+   revenue:"₹25L/year SaaS per municipality. World Bank/ADB project licensing. Real estate parcel intelligence ₹50L/report. State enterprise contracts.",
+   mvp:"Build spatial AI dashboard for Indore: ingest satellite + census data, generate automated infrastructure gap report + flood risk overlay. Demo to the municipal commissioner.",
+   scale:"10 municipal clients Year 1. PM AMRUT 2.0 integration Year 2. Expand to Bangladesh, Africa Year 3. 500 municipalities, $50M ARR Year 5.",
+   risks:[["Long govt sales cycle","high"],["Data quality","med"],["Political dynamics","med"]],
+   unicorn:"World Bank alone funds $10B+ South Asian urban projects annually. Being their preferred AI planning layer is transformative."},
+
+  // ── 9 ──
+  {num:9,name:"PharmaFlow",tagline:"AI cold chain intelligence preventing India's ₹15,000Cr/year vaccine spoilage",cat:"HealthTech",tags:["IoT","Cold Chain","Pharma"],
+   problem:"25% of India's temperature-sensitive drugs and vaccines spoil before reaching patients due to broken cold chain monitoring. No real-time intelligence, only reactive responses.",
+   customers:"Pharma companies (Sun, Cipla, Biocon), state health departments, cold chain logistics providers.",
+   unique:"Low-cost BLE+cellular IoT tags (<$2 each at scale) combined with AI predictive spoilage modeling are now cheap enough to cover India's 700+ district cold chains — the economics didn't work 3 years ago.",
+   revenue:"₹12/tag/month SaaS. Pharma enterprise API ₹50L/year. CoWIN-style govt cold chain contract. Insurance spoilage underwriting API.",
+   mvp:"500 IoT tags across one state's vaccine cold chain (state health dept partnership). Real-time dashboard + SMS alert system. Demonstrate 10% spoilage reduction in 3 months.",
+   scale:"3 states, 2 pharma clients Year 1. eVIN integration Year 2. Africa with WHO procurement Year 3. 10M tags globally Year 5.",
+   risks:[["Hardware supply chain","med"],["Govt procurement complexity","high"],["Remote connectivity","med"]],
+   unicorn:"India pharma cold chain = ₹70,000Cr. Global vaccine cold chain = $6B by 2028. This is critical infrastructure — the AWS of pharma logistics."},
+
+  // ── 10 ──
+  {num:10,name:"MindMesh",tagline:"Neuroadaptive learning OS for neurodiverse children in government schools",cat:"EdTech",tags:["NeuroAI","EdTech","BioAI"],
+   problem:"15–20% of children are neurodiverse (ADHD, dyslexia, autism). In India's 1.5M govt schools, they're labelled 'slow learners' and ignored. Standard EdTech apps make this worse with one-size teaching.",
+   customers:"Govt school systems, special ed teachers, NGOs (Pratham, Teach for India), state education depts, UNICEF.",
+   unique:"Webcam-based eye-tracking for reading difficulty detection (2024 breakthrough) + LLM-generated adaptive content = neuroadaptive learning for the first time without clinical diagnosis or expensive hardware.",
+   revenue:"₹0 basic / ₹299/month premium family. ₹50/student/year B2G state contract. USAID/UNICEF grant deployments. Corporate CSR ₹2Cr+ packages.",
+   mvp:"Tablet app using webcam eye-tracking to detect reading difficulty. Serve neuroadaptive exercises for 3 reading levels. Pilot 500 children in 5 govt schools. Publish outcomes data.",
+   scale:"1 state, 50K students Year 1. NEP 2020 alignment for govt adoption Year 2. 22 Indian languages Year 3. 10M students + Africa + SE Asia with UNICEF Year 5.",
+   risks:[["Clinical validation","med"],["Device availability in schools","med"],["Minor data privacy","high"]],
+   unicorn:"350M school-age children in India. NEP 2020 EdTech spend = ₹1,00,000Cr by 2030. Being the neurodiverse learning layer for Global South public education is a generational play."},
+
+  // ── 11 ──
+  {num:11,name:"PollinatAI",tagline:"AI-powered pollinator monitoring network saving India's $217B agricultural ecosystem",cat:"Climate",tags:["Climate","AI","AgriTech"],
+   problem:"India's bee populations have declined 40% in a decade due to pesticide overuse and habitat loss. Pollinator collapse threatens 35% of food crops worth $217B. No real-time monitoring system exists for farmers to know when and where pollinators are absent.",
+   customers:"Large fruit/vegetable farm clusters, horticulture exporters, pesticide companies (liability monitoring), Dept of Agriculture, ICAR.",
+   unique:"Acoustic AI for bee detection via $5 IoT microphones mounted on hives is a 2023–24 research breakthrough. No commercial product exists. Bee acoustics carry precise health data previously only accessible to expensive lab equipment.",
+   revenue:"₹2,999/farm/year monitoring SaaS. Pesticide company safe-spray timing API ₹30L/year. Insurance pollinator risk underwriting. Carbon-equivalent biodiversity credits.",
+   mvp:"Deploy acoustic sensors on 50 hives across one fruit-growing district. Train bee activity classifier. Deliver daily 'safe to spray' WhatsApp alerts to farmers. Prove yield improvement.",
+   scale:"1,000 farms Year 1. Partner with National Bee Board Year 2. Expand to EU (EU Nature Restoration Law compliance) and US almond belt Year 3.",
+   risks:[["Sensor durability outdoors","med"],["Farmer willingness to pay","med"],["Model accuracy across species","med"]],
+   unicorn:"Global precision agriculture market = $12B. Pollinator monitoring is a legally mandated requirement under EU Nature Restoration Law — instant European enterprise market."},
+
+  // ── 12 ──
+  {num:12,name:"LaborLens",tagline:"Real-time supply chain labor compliance AI for global brands sourcing from India",cat:"AI",tags:["AI","ESG","Supply Chain"],
+   problem:"H&M, Zara, and Apple face $500M+ in annual fines and boycotts from supply chain labor violations in Indian/Bangladeshi factories. Their audits are annual, fake, and meaningless. 73% of audit reports are fraudulent.",
+   customers:"Global fashion/electronics brands, tier-1 Indian exporters, supply chain ESG insurers, EU CSDD compliance officers.",
+   unique:"The EU Corporate Sustainability Due Diligence Directive (2024) makes real-time supply chain labor monitoring legally mandatory from 2026 — a regulatory gun pointed at $2T of supply chains. No tech solution exists yet.",
+   revenue:"$50K/brand/year SaaS for continuous monitoring. Per-factory audit replacement certification $5K. ESG insurance underwriting API. Brand risk score API for investors.",
+   mvp:"Partner with 10 Tirupur garment factories. Deploy anonymous worker voice survey via USSD (no smartphone needed). AI sentiment analysis. Produce weekly risk dashboards for 2 brand clients.",
+   scale:"100 factories Year 1. EU CSDD compliance certification partnership Year 2. Expand to Bangladesh, Vietnam Year 3. 10,000 factories, $50M ARR Year 5.",
+   risks:[["Factory manager resistance","high"],["Worker fear of retaliation","high"],["Political sensitivity","med"]],
+   unicorn:"$2T of EU-regulated global supply chains need continuous compliance. One dominant platform capturing 2% of this = $4B in audit + SaaS revenue."},
+
+  // ── 13 ──
+  {num:13,name:"NephroAI",tagline:"AI-powered early CKD detection kiosk for India's pharmacies — catching kidney failure before dialysis",cat:"HealthTech",tags:["BioAI","Diagnostics","B2G"],
+   problem:"India has 220M+ people with undiagnosed Chronic Kidney Disease. Detection happens at Stage 4 or 5 when dialysis is the only option — costing ₹15,000/month for life. Stage 1–2 is completely reversible with diet changes, but requires a blood test that 90% of rural India never gets.",
+   customers:"Urban and semi-urban pharmacies (1.2M in India), corporate wellness programs, ESIC, CGHS, private hospitals.",
+   unique:"Point-of-care AI creatinine testing from a urine strip + smartphone camera (2024 research) brings Stage-1 CKD screening to ₹50/test. No one has packaged this as a pharmacy kiosk with longitudinal AI tracking.",
+   revenue:"₹50/test pharmacy kiosk revenue share. ₹199/month longtitudinal monitoring subscription. Insurance early-detection discount API. Pharma partnerships for CKD drug adherence.",
+   mvp:"Validate urine-strip smartphone AI against lab blood tests in 500 patients. Deploy kiosk software in 20 pharmacies in one city. Run a ₹49 'kidney health check' campaign.",
+   scale:"500 pharmacies Year 1. MOU with Jan Aushadhi network Year 2. Integrate with ABHA health records Year 3. Pan-India + Bangladesh + Pakistan Year 5.",
+   risks:[["Regulatory (CDSCO IVD)","high"],["Test accuracy validation","high"],["Pharmacy adoption","med"]],
+   unicorn:"If 10M Indians get annual screening at ₹50 = ₹50Cr testing revenue + ₹199/month subscriptions for diagnosed cohort = ₹1,000Cr ARR. International replicate in CKD-endemic SE Asia."},
+
+  // ── 14 ──
+  {num:14,name:"FloodPulse",tagline:"AI flood early warning system for India's 36M flood-affected people with 6-hour advance notice",cat:"Climate",tags:["Climate","GovTech","IoT"],
+   problem:"India loses ₹40,000Cr+ annually to floods. Current IMD warnings are too broad (district-level) and too late (2–12 hours). 36M people are evacuated annually, often without adequate notice. Informal settlements near rivers have zero warning infrastructure.",
+   customers:"State disaster management authorities, municipal corporations, NDMA, World Bank climate resilience projects, telcos (for emergency broadcast).",
+   unique:"A mesh of low-cost river-level ultrasonic sensors (₹3,000 each) + ML trained on historical flood patterns + satellite soil moisture data can produce hyperlocal 6-hour flood predictions — far better than IMD's current models. No startup has productized this.",
+   revenue:"₹1Cr/district/year B2G SaaS. World Bank/ADB climate resilience project contracts. Reinsurance flood risk pricing API. Telco emergency alert API licensing.",
+   mvp:"Install 20 sensors along one river in Bihar or Assam. Build a flood prediction model using historical data. Pilot a WhatsApp alert system for 5,000 households. Demonstrate evacuation time improvement.",
+   scale:"5 river systems Year 1. National Flood Management portal integration Year 2. Expand to Bangladesh (most flood-affected country per capita), Vietnam, Nigeria Year 4.",
+   risks:[["Sensor theft/vandalism","med"],["Govt procurement pace","high"],["Model accuracy in novel flood patterns","med"]],
+   unicorn:"India's climate adaptation budget is ₹5L Cr through 2030. World Bank has committed $10B to South Asian climate resilience. FloodPulse could become the global standard for LMI-country flood prediction."},
+
+  // ── 15 ──
+  {num:15,name:"ProxyMed",tagline:"AI that turns India's 8 lakh ASHA workers into frontline diagnostic agents",cat:"HealthTech",tags:["AI","Community Health","B2G"],
+   problem:"India has 1 doctor per 1,400 people (WHO minimum is 1:1,000). 8 lakh ASHA workers visit 70M households monthly but can only collect data — they have no diagnostic capability. Each ASHA worker could be a diagnostic 'proxy' but lacks training and tools.",
+   customers:"State health departments, NRHM, WHO, UNICEF, Gates Foundation, health insurance companies.",
+   unique:"A combination of guided clinical decision support + AI symptom assessment + cheap connected diagnostic devices (pulse ox, BP monitor) can turn a literate non-medical worker into a basic diagnostician. This is epistemically new — not teleconsultation, but AI-augmented frontline health workers.",
+   revenue:"₹5Cr/state/year B2G SaaS. WHO/UNICEF program contracts. Insurance risk-stratification data. Pharmaceutical channel for frontline drug dispensing.",
+   mvp:"Build a guided diagnostic app for 100 ASHA workers in one district: decision tree for 10 most common conditions (TB, malaria, anaemia, hypertension). Measure referral accuracy vs control group.",
+   scale:"1 state, 10K ASHA workers Year 1. PM Arogya Mitra integration Year 2. Replicate for community health workers globally (Nigeria has 70K, Ethiopia has 38K) Year 4.",
+   risks:[["Liability for wrong diagnosis","high"],["ASHA worker training","med"],["Govt buy-in complexity","high"]],
+   unicorn:"India alone has 8L ASHA workers. Global community health worker ecosystem = 2M+ workers. At $500/worker/year, that's $1B+ TAM. Gates Foundation and WHO are actively seeking this solution."},
+
+  // ── 16 ──
+  {num:16,name:"ThermoGrid",tagline:"AI energy management for India's 3M+ diesel generator users — killing ₹80,000Cr/year in waste",cat:"Climate",tags:["Climate","IoT","AI"],
+   problem:"India's 3M+ commercial diesel generator sets consume ₹80,000Cr of fuel annually, half of which is wasted through inefficient scheduling, load mismatch, and lack of real-time power quality monitoring. SME owners run generators on timers — not intelligence.",
+   customers:"Hotels, hospitals, commercial buildings, telecom tower operators, cold storage facilities in Tier-2/3 India.",
+   unique:"₹2,000 smart current transformer + SIM-connected edge device can monitor generator load + grid power in real time. AI scheduling that cuts diesel consumption 25–40% has no commercial product in India despite obvious demand.",
+   revenue:"₹15,000/unit/year SaaS monitoring subscription (3–6 month payback for client). CAPEX hardware sale ₹8,000/unit. Carbon credit generation from diesel reduction. Energy audit reports.",
+   mvp:"Install 20 smart monitors on hotel generators in one city. Build load-optimization algorithm. Demonstrate 25% diesel savings. Calculate ROI and document case study. Sell to 50 more hotels on the case study alone.",
+   scale:"500 units Year 1. Telecom tower operators (200K towers in India) Year 2. Integrate with solar + battery storage dispatch Year 3. Expand to Nigeria, Kenya, Pakistan Year 5.",
+   risks:[["Hardware installation friction","med"],["Client ROI patience","low"],["Incumbent generator OEM competition","med"]],
+   unicorn:"3M+ generators × ₹15K/year = ₹45,000Cr SaaS TAM in India alone. Telecom tower operators (Indus, ATC) alone have 200K towers and spend ₹20,000Cr on diesel. This is a guaranteed ROI sale."},
+
+  // ── 17 ──
+  {num:17,name:"FabricAI",tagline:"AI fashion designer for India's 12M handloom weavers to create globally sellable designs",cat:"AI",tags:["AI","Creative Economy","Exports"],
+   problem:"India's 12M handloom weavers are the world's most skilled textile artisans but produce designs based on 30-year-old patterns. They have no access to global trend data, buyer preferences, or co-design tools. Their products sit unsold while global buyers search for authentic handloom — a $8B unmet export opportunity.",
+   customers:"Handloom weaver cooperatives, state handloom corporations (AP, Assam, Varanasi), global fashion brands (sustainable collections), D2C handloom startups.",
+   unique:"Image-to-weave-pattern AI that respects weave structure constraints (warp/weft physics) while infusing global trend aesthetics — no one has built this because it requires both fashion AI and textile engineering knowledge. Loom-specific design generation is computationally novel.",
+   revenue:"₹2,999/cooperative/year design SaaS. Per-design export commission 8%. Brand co-design partnerships. Govt ODOP (One District One Product) scheme integration.",
+   mvp:"Fine-tune Stable Diffusion on 500 handloom patterns from Pochampally + Varanasi. Build a simple co-design web app for 50 cooperatives. Connect 5 global buyers. Track export uptick.",
+   scale:"1,000 cooperatives Year 1. Ministry of Textiles integration Year 2. Direct D2C global marketplace Year 3. Expand to Cambodian silk, Indonesian batik Year 5.",
+   risks:[["IP ownership of AI-generated patterns","med"],["Cooperative technology adoption","med"],["Buyer discovery","low"]],
+   unicorn:"$8B handloom export gap. 12M weavers at ₹2,999/year = ₹3,600Cr SaaS + export commission on a huge trade volume. Cultural AI is a market nobody has cracked for Global South artisans."},
+
+  // ── 18 ──
+  {num:18,name:"SoilBank",tagline:"Soil carbon sequestration measurement and financing platform for degraded Indian farmland",cat:"Climate",tags:["Climate","FinTech","AgriTech"],
+   problem:"120M hectares of Indian farmland is degraded, reducing crop yields by 30–50%. Soil restoration has proven ROI but farmers can't finance it. No mechanism exists to monetize the carbon sequestered during soil restoration — a proven $200–400/hectare revenue stream.",
+   customers:"Degraded-land farmers, soil restoration NGOs (Watershed Organisation Trust), NABARD, impact investors, ESG corporations buying soil carbon credits.",
+   unique:"High-precision portable NIR (near-infrared) soil sensors (now <$200) can measure soil organic carbon in 30 seconds — down from ₹5,000 lab tests. Combining this with satellite monitoring and blockchain issuance is a never-done stack.",
+   revenue:"₹500/soil assessment. 12% commission on carbon credit sales. NABARD-backed low-interest loan origination fee. ESG corporate subscription for portfolio soil health tracking.",
+   mvp:"Buy 3 NIR sensors. Train village-level soil entrepreneurs (like common service centers). Measure 500 farms in one degraded district (Vidarbha, Bundelkhand). Issue first batch of soil carbon credits. Sell to one corporate.",
+   scale:"10K farms Year 1. NABARD MOU for financing Year 2. Govt Soil Health Card integration Year 3. Scale to Africa (biggest degraded land area globally) Year 5.",
+   risks:[["NIR sensor accuracy","med"],["Carbon credit market volatility","high"],["Farmer trust in new instruments","med"]],
+   unicorn:"120M degraded hectares × ₹15,000/ha soil carbon credit value = ₹180L Cr total market. Even 1% penetration over 10 years is a unicorn. African degraded land makes this 10x global."},
+
+  // ── 19 ──
+  {num:19,name:"RoboMason",tagline:"Semi-autonomous bricklaying robot for India's ₹15L Cr construction sector",cat:"Robotics",tags:["Robotics","Construction","AI"],
+   problem:"India builds 10M houses/year but faces a severe skilled mason shortage — 30% of construction delays are due to mason unavailability. Bricklaying is back-breaking work; young people refuse it. This shortage will worsen as urbanization accelerates.",
+   customers:"Affordable housing developers (Godrej, Mahindra Lifespace), govt housing schemes (PMAY), mid-size construction contractors, precast concrete companies.",
+   unique:"Existing bricklaying robots (Hadrian X, SAM100) cost $1–2M and are designed for Australian/US construction standards. India needs a $20,000–50,000 modular semi-autonomous unit that works with Indian brick sizes, irregular site conditions, and local power infrastructure.",
+   revenue:"₹50,000/month lease per unit. Maintenance contract ₹10,000/month. Per-sq-ft productivity licensing. Data from construction sites for structural analysis AI.",
+   mvp:"Build a single-axis bricklaying jig with vision-guided mortar application. Demonstrate 3x a mason's daily output. Lease to one PMAY contractor. Document cost-per-brick vs manual labor.",
+   scale:"50 units, 3 states Year 1. PMAY contractor framework tie-up Year 2. Export to GCC countries (massive construction, zero skilled migrants) Year 4. 1,000 units Year 5.",
+   risks:[["Hardware development capital","high"],["Site condition variability","high"],["Labour union resistance","med"]],
+   unicorn:"India's construction sector is ₹15L Cr. Even capturing 2% of bricklaying as a service = ₹30,000Cr. GCC markets (UAE, Saudi) are building $1T in infrastructure with acute labor shortages."},
+
+  // ── 20 ──
+  {num:20,name:"GenomeGrove",tagline:"At-home DNA testing + AI nutrition + Ayurveda integration for Indian metabolic health",cat:"Biotech",tags:["Biotech","AI","HealthTech"],
+   problem:"India has 101M diabetics and 135M pre-diabetics — the world's diabetes capital. Standard nutrition advice is generic. Ayurvedic constitutions (Prakriti) are scientifically correlated with metabolic predispositions but no product connects genomics + Ayurveda + personalized nutrition in one platform.",
+   customers:"Urban health-conscious Indians (25–55), corporate wellness programs, integrative medicine clinics, insurance companies (risk stratification).",
+   unique:"Whole-genome SNP genotyping kits now cost $30 to process. No one has built the AI layer mapping Indian genetic variants (which differ significantly from Western databases) to Ayurvedic Prakriti + evidence-based dietary intervention. This requires India-specific genomic data — a genuine moat.",
+   revenue:"₹4,999 DNA test kit + ₹999/month personalized nutrition subscription. Corporate wellness ₹2,000/employee. Insurance genetic risk API. Premium Ayurvedic supplement line based on genotype.",
+   mvp:"Partner with CSIR-IGIB or IIT Bombay genomics lab. Process 1,000 test kits. Build AI nutrition engine. Validate Prakriti correlation. Launch D2C at ₹4,999 including 3-month subscription.",
+   scale:"10K kits Year 1. Corporate wellness partnerships Year 2. Genetic database becomes India's largest (moat). Insurance risk scoring Year 3. Expand to diaspora (UK, US, Middle East) Year 5.",
+   risks:[["Genomic data privacy regulation","high"],["Ayurveda-genomics scientific validation","med"],["Lab partnership dependency","med"]],
+   unicorn:"India's preventive health market = $8B by 2030. India's diabetes burden makes this an insurance imperative. Building the country's largest Indian genetic database while selling consumer products is the ultimate biotech moat."},
+
+  // ── 21 ──
+  {num:21,name:"AquaTrace",tagline:"AI groundwater depletion predictor and water credit market for India's dying aquifers",cat:"Climate",tags:["Climate","AI","Water"],
+   problem:"India uses 90% of the world's groundwater annually. 54% of India faces high water stress. Aquifers in Punjab, Haryana, and Rajasthan will run dry by 2029–2032 at current extraction rates. No real-time aquifer monitoring or economic incentive to conserve exists.",
+   customers:"State groundwater boards, large agri-water users (sugarcane, rice farmers), beverage/FMCG companies (water risk disclosure), World Bank, ADB.",
+   unique:"InSAR satellite data (free from ESA Sentinel-1) combined with gravity anomaly data from GRACE satellites can measure groundwater depletion at village level — this analytical pipeline has only been validated in peer research. No commercial product exists.",
+   revenue:"₹20L/district/year B2G predictive SaaS. Corporate water risk reporting API ₹50L/year. Water credit issuance 10% commission. Agricultural water audit reports.",
+   mvp:"Build aquifer depletion forecast dashboard for one over-exploited district using free satellite data. Present to state groundwater board. Publish research. Apply for World Bank innovation grant.",
+   scale:"10 districts Year 1. MOU with Central Ground Water Board Year 2. Launch India's first water credit market Year 3. Expand to Iran, Pakistan, Egypt (all facing worse crises) Year 5.",
+   risks:[["Data accuracy at village level","med"],["Political economy of water","high"],["Monetization of govt data","med"]],
+   unicorn:"Water scarcity is the defining crisis of 2025–2040. Every corporate now requires water risk disclosure under TCFD. India's groundwater board + international climate finance = $100M+ revenue."},
+
+  // ── 22 ──
+  {num:22,name:"MicroGrid.ai",tagline:"AI energy trading platform for India's 50M solar rooftop owners to sell surplus power",cat:"Climate",tags:["Climate","AI","FinTech"],
+   problem:"India has 70GW of installed solar, projected to hit 500GW by 2030. But rooftop solar owners can only sell surplus to DISCOMS at ₹3/unit with 6–18 month payment delays. Peer-to-peer energy trading is theoretically possible but has no commercial platform with regulatory clearance.",
+   customers:"Residential and commercial solar owners, housing societies, industrial clusters, DISCOMs (as partners), EV charging operators.",
+   unique:"CERC's draft P2P energy trading regulations (2023) created legal space. No startup has built the metering API + blockchain settlement + real-time marketplace for rooftop solar P2P in India. The regulatory window just opened.",
+   revenue:"2% transaction fee on P2P energy trades. ₹999/month premium seller analytics. DISCOM data licensing for grid balancing. EV charging network integration rev-share.",
+   mvp:"Partner with one forward-looking DISCOM (BEST Mumbai or BESCOM Bangalore). Connect 100 solar rooftop owners in one housing cluster. Run a 3-month real-money P2P trading pilot.",
+   scale:"10 DISCOMs Year 2. Industrial cluster energy trading Year 3. Aggregate into India's first virtual power plant Year 4. Expand to SE Asia (Philippines has same regulatory moment) Year 5.",
+   risks:[["DISCOM political resistance","high"],["Metering infrastructure gaps","med"],["Regulatory pace","high"]],
+   unicorn:"500GW of Indian solar by 2030 = ₹5L Cr of annual generation. 2% transaction fee on 10% traded P2P = ₹10,000Cr TAM. This is the NSE of clean energy."},
+
+  // ── 23 ──
+  {num:23,name:"TrustLabel",tagline:"AI-powered real-time food adulteration detection for India's unsafe food supply chain",cat:"AI",tags:["AI","FoodSafety","IoT"],
+   problem:"FSSAI's own studies show 30–40% of India's food samples are adulterated. Milk, ghee, spices, and cooking oil are the worst affected. Current lab testing takes 7–15 days and costs ₹2,000–10,000 per sample — impossible for small retailers or families to use.",
+   customers:"Retail chains (D-Mart, Reliance Fresh), FSSAI inspectors, conscious urban consumers, premium food brands (adulteration insurance), school mid-day meal programs.",
+   unique:"Raman spectroscopy spectrometers have shrunk to $300 handheld devices (2023–24). AI models trained on Indian food adulteration signatures can detect 50+ adulterants in 30 seconds. No product combines the hardware + trained AI models for Indian food specifically.",
+   revenue:"₹25,000 device sale (margin 60%). ₹2,999/month SaaS for scan database + alerts. FSSAI inspection contract. Food brand 'certified unadulterated' label licensing.",
+   mvp:"Buy 3 handheld Raman devices. Train adulteration models on 20 most common Indian adulterants (chalk in milk, brick powder in chilli, argemone in mustard oil). Demo to 5 D-Mart stores. Publish accuracy data.",
+   scale:"500 retail chains Year 1. FSSAI partnership for inspector fleet Year 2. Consumer app with scan + crowdsource reporting Year 3. Expand to Middle East (large Indian diaspora food market) Year 5.",
+   risks:[["Device cost reduction","med"],["Model accuracy across regional variations","med"],["FSSAI regulatory partnership","med"]],
+   unicorn:"India's ₹75L Cr food retail market with 30% adulteration = $30B problem. Every premium food brand needs credible adulteration insurance. FSSAI inspector fleet alone is 15,000+ officers."},
+
+  // ── 24 ──
+  {num:24,name:"PanchangAI",tagline:"AI astrology and Vedic calendar SaaS for India's $40B astrology and religious event market",cat:"AI",tags:["AI","Cultural","Consumer"],
+   problem:"India spends $40B/year on astrology, Muhurtham (auspicious timing), Vastu, and religious rituals. 900M Indians consult astrologers regularly. Current services are human-bottlenecked, inconsistent, and cannot scale. Online players (AstroSage, Clickastro) give generic answers — not personalized computational Vedic astrology.",
+   customers:"Urban and semi-urban Hindu/Jain families (25–55), wedding planners, temple trusts, Panchang app users, religious e-commerce (flower delivery, puja kits).",
+   unique:"Sanskrit computational astronomy (Vedic ephemeris calculation) is a precise mathematical system that AI can execute flawlessly. Building a B2B2C 'Panchang engine' API that powers India's 500+ religious apps with accurate, real-time Muhurtham and Kundali generation has never been done.",
+   revenue:"₹299/month consumer subscription. B2B API ₹50K/month for religious apps. Wedding planner SaaS ₹5,000/event. Temple trust white-label platform ₹5L/year.",
+   mvp:"Build Vedic ephemeris calculation engine. Launch WhatsApp bot for daily Panchang + personalized Muhurtham recommendations. Charge ₹99/month. Partner with 3 wedding planning companies.",
+   scale:"100K subscribers Year 1. API partnership with top 50 Indian religious apps Year 2. White-label for temple trusts Year 3. Diaspora expansion (US, UK, Canada) Year 4.",
+   risks:[["User trust in AI vs human astrologer","med"],["Cultural sensitivity","med"],["Pandit community pushback","low"]],
+   unicorn:"$40B astrology market growing at 15%/year. 900M potential users. The 'Vedic computing engine' that powers India's entire religious-tech stack is an infrastructure monopoly. Jio would acquire this."},
+
+  // ── 25 ──
+  {num:25,name:"CivicPulse",tagline:"Real-time AI civic grievance intelligence platform for Indian municipalities",cat:"GovTech",tags:["GovTech","AI","Smart City"],
+   problem:"Indians file 500M+ civic complaints annually via portals like 311, CM helplines, social media, and WhatsApp. 80% are duplicates or unrouted correctly. Municipal staff manually read complaints, creating 15–30 day response delays. Smart City dashboards exist but are disconnected from actual citizen voice.",
+   customers:"Municipal corporations (BMC, BBMP, NMMC), state CM helpline operations, Smart City Mission SPVs, World Bank urban governance projects.",
+   unique:"Multi-channel complaint aggregation (Twitter, Facebook, WhatsApp, 1962, MyGov) + NLP de-duplication + auto-routing + predictive maintenance pattern detection is a technically novel stack. Current IT vendors (NIC, Wipro) build static portals, not AI-powered complaint intelligence.",
+   revenue:"₹50L/year per municipal corporation SaaS. State-level ₹5Cr/year enterprise. Telco white-label for citizen services. World Bank project implementation contracts.",
+   mvp:"Scrape and analyze 6 months of public tweets/posts about BMC or BBMP. Build de-duplication + routing AI. Demo to city commissioner with 'live grievance map'. Apply for Smart City Mission innovation grant.",
+   scale:"5 cities Year 1. State CM helpline integration Year 2. National municipal platform Year 3. Expand to East African smart city programs (Nairobi, Lagos) Year 5.",
+   risks:[["Govt data access","med"],["Municipal IT procurement cycles","high"],["Political will to act on complaints","med"]],
+   unicorn:"India's 4,000 municipalities × ₹50L/year = ₹20,000Cr TAM. World Bank funds $3B+ in urban governance globally. Being the intelligence layer for India's citizen-government interface is a trillion-rupee position."},
+
+  // ── 26 ──
+  {num:26,name:"NeuroHire",tagline:"AI job matching for India's 5M neurodiverse adults locked out of formal employment",cat:"AI",tags:["AI","Inclusion","HR Tech"],
+   problem:"5M Indians with autism, ADHD, and dyslexia are capable workers but unemployable through standard hiring — they fail interviews that test social performance, not skill. Companies miss $200B of neurodiverse productivity. Indian HR tech ignores this segment entirely.",
+   customers:"Corporations with DE&I mandates (TCS, Infosys, HDFC, MNCs with India offices), neurodiverse adults and their families, NGOs (Autism Society of India), MOSJE.",
+   unique:"Neurodiverse-specific job assessment (task-based, not interview-based) + AI matching to neurodiverse-friendly roles + manager training system has been built in the US (Specialisterne, Ultranauts) but zero commercial product exists for India — where the stigma and unmet need is 10x greater.",
+   revenue:"₹3,000/placement success fee to companies. ₹1,999/month assessment subscription for companies. Govt DWPD (Disabled Persons) scheme integration. Corporate DE&I dashboard ₹5L/year.",
+   mvp:"Build 10 task-based skill assessments (data entry, QA testing, pattern recognition, coding) suitable for autistic adults. Partner with 5 NGOs to assess 200 candidates. Match to 3 employer pilots.",
+   scale:"50 employer partners Year 1. SEBI, RBI mandate integration (listed companies must report DE&I) Year 2. National NeuroInclusion certification standard Year 3. Expand to Singapore, UAE Year 5.",
+   risks:[["Employer mindset change","high"],["Assessment scientific validity","med"],["Sustainability of placements","med"]],
+   unicorn:"Global neurodiverse employment market = $30B. ESG regulations mandating disability employment in India's top-500 listed companies create forced demand. First mover wins the entire institutional market."},
+
+  // ── 27 ──
+  {num:27,name:"PlasticTrace",tagline:"Blockchain traceability for India's $12B plastic recycling industry — fighting fake recycling claims",cat:"Climate",tags:["Climate","Web3","Circular Economy"],
+   problem:"India's Extended Producer Responsibility (EPR) for plastics mandates that companies certify recycling of their plastic waste. ₹15,000Cr of EPR credits are traded annually — and 60% are fraudulent. Companies pay for recycling certificates that don't correspond to real recycling. Regulators have no way to verify.",
+   customers:"FMCG companies (HUL, ITC, Britannia) with EPR mandates, plastic recyclers (formalised sector), CPCB, state pollution control boards, ESG investors.",
+   unique:"The EPR mandate is new (2022) and enforcement just began in 2024. The fraudulent certificate market is well-documented but no tech solution exists. Blockchain-anchored waste tracking (from factory to recycler) with IoT weight sensors is technically novel for this use case.",
+   revenue:"₹50/certificate issuance on blockchain. ₹10L/year FMCG compliance dashboard. CPCB audit contract. ESG reporting API for listed companies.",
+   mvp:"Partner with 5 formal plastic recyclers. Install IoT weight+type sensors at intake and output. Issue blockchain certificates for verified tonnage. Sell to 2 FMCG companies for EPR credit generation.",
+   scale:"200 recyclers Year 1. CPCB recognition as approved verification system Year 2. Extend to e-waste, battery waste (both have similar EPR mandates) Year 3. Expand to EU (PPWR regulation) Year 5.",
+   risks:[["Recycler tech adoption","med"],["CPCB regulatory approval timing","high"],["Fraud actors resisting","high"]],
+   unicorn:"₹15,000Cr of EPR credits + massive FMCG compliance need = instant revenue. EU's PPWR (Packaging and Packaging Waste Regulation) creates European market. Circular economy verification is a $5B global market."},
+
+  // ── 28 ──
+  {num:28,name:"HireVoice",tagline:"Voice-AI recruitment platform for India's 200M job seekers who can't type but can speak",cat:"AI",tags:["AI","HR Tech","Vernacular"],
+   problem:"India has 200M active job seekers. 60% are in Tier-2/3 cities with low digital literacy — they can't fill in online job application forms. Yet they have smartphones and speak fluently. Every job platform (Naukri, Apna, WorkIndia) is text-first, locking out the majority of India's workforce.",
+   customers:"Blue and grey-collar job seekers, factory HR managers, logistics companies (Delhivery, Amazon India), construction contractors, quick commerce companies.",
+   unique:"Voice-first job application and matching in 12 Indian languages with AI personality + competency assessment through natural conversation is technically feasible since 2024 (Sarvam AI, Bhashini) but no HR tech startup has built the full vernacular voice-first recruitment pipeline.",
+   revenue:"₹500/successful placement (employer pays). ₹5,000/month employer SaaS for AI phone screening. Government skilling scheme integration. Premium candidate ranking algorithm.",
+   mvp:"Build voice-based job application bot in Hindi + Tamil. Partner with 3 logistics companies for driver/warehouse hiring. Run 1,000 voice applications. Measure time-to-hire vs text platform.",
+   scale:"10 Indian languages, 50 employer partners Year 1. Quick commerce (Blinkit, Swiggy Instamart) national contract Year 2. 1M monthly applications Year 3. Expand to Arabic (GCC blue-collar market) Year 5.",
+   risks:[["Voice AI accuracy in noisy environments","med"],["Employer trust in voice assessment","med"],["Competition from Apna/WorkIndia","high"]],
+   unicorn:"200M job seekers. Even at ₹500/placement at 1M placements/year = ₹500Cr. Enterprise SaaS for logistics/construction HR is a ₹5,000Cr additional market."},
+
+  // ── 29 ──
+  {num:29,name:"BioWarden",tagline:"AI biosurveillance system detecting disease outbreaks in India's livestock 6 weeks early",cat:"Biotech",tags:["Biotech","AI","AgriTech"],
+   problem:"India's 300M cattle, 150M buffalo, and 700M poultry lose ₹40,000Cr/year to preventable disease outbreaks. Foot-and-mouth, lumpy skin, bird flu outbreaks are detected only after mass deaths — 4–6 weeks too late for intervention. No early warning system exists.",
+   customers:"State animal husbandry departments, large dairy cooperatives (Amul, Mother Dairy, Karnataka Milk Federation), poultry integrators (Suguna, Venky's), insurance companies.",
+   unique:"Combining wearable livestock biometric sensors (rumination, movement, temperature) with environmental pathogen monitoring (wastewater genomics) and satellite vegetation anomaly detection into a unified outbreak AI — this stack didn't exist 3 years ago.",
+   revenue:"₹50/animal/year monitoring SaaS (dairy cooperatives pay). State govt disease surveillance contracts ₹2Cr/year. Livestock insurance underwriting API. Vaccine distribution pre-positioning advisory.",
+   mvp:"Deploy 500 ear-tag sensors on dairy cattle in one cooperative (Amul cluster). Build rumination anomaly model. Demonstrate FMD early detection 15 days before visual symptoms. Get endorsement from cooperative vet.",
+   scale:"5 dairy cooperatives, 3 states Year 1. DAHD (Dept of Animal Husbandry) national program Year 2. Expand to poultry surveillance Year 3. Africa (livestock disease is catastrophic there) Year 5.",
+   risks:[["Farmer willingness to tag animals","med"],["Sensor accuracy in field","med"],["Disease pattern variability","med"]],
+   unicorn:"₹40,000Cr annual livestock loss in India. Insurance companies underwriting this risk will pay for a detection system that cuts claims by 30%. Africa's livestock sector is $50B and has zero biosurveillance."},
+
+  // ── 30 ──
+  {num:30,name:"LegalDNA",tagline:"AI that makes India's 4.5Cr pending court cases queryable and predictable",cat:"AI",tags:["AI","LegalTech","GovTech"],
+   problem:"India has 4.5 Cr pending court cases. Lawyers spend 60–70% of time on document review, legal research, and precedent hunting — not advice. Small businesses in Tier-2/3 cities can't afford lawyers for contracts, disputes, and IP filings. Legal literacy is near zero.",
+   customers:"Individual litigants, SMEs, Tier-2/3 city lawyers, legal aid organizations, insurance companies (dispute risk modeling), law schools.",
+   unique:"India's Supreme Court and High Courts have digitized 20+ years of judgments. Fine-tuned LLMs that understand Indian legal jurisprudence (which differs fundamentally from US/UK law used in Western LegalTech) + case outcome prediction + vernacular legal drafting is a genuinely novel product.",
+   revenue:"₹999/month individual subscription. ₹5,000/month law firm SaaS. ₹50L/year insurance dispute risk API. Govt legal aid automation contract.",
+   mvp:"Build a Hindi+English legal Q&A chatbot trained on SC + High Court judgments. Partner with 3 district court law firms. Offer free contract review for 100 SMEs. Publish case outcome prediction accuracy.",
+   scale:"5,000 law firm subscribers Year 1. Bar Council of India partnership Year 2. State legal aid authority (DLSA) automation Year 3. Expand to Sri Lanka, Bangladesh (same British-Indian legal system) Year 5.",
+   risks:[["Bar Council of India resistance","high"],["Hallucination in legal contexts","high"],["Liability for wrong legal advice","high"]],
+   unicorn:"India's legal services market = ₹7L Cr. 4.5Cr pending cases = massive willingness to pay for resolution speed. Being the infrastructure for Indian legal intelligence is a $1B+ opportunity."},
+
+  // ── 31 ──
+  {num:31,name:"MemoryMesh",tagline:"Decentralized personal data wallet letting Indians monetize their own data",cat:"Web3",tags:["Web3","Privacy","FinTech"],
+   problem:"India's 900M smartphone users generate $15B+ of annual data value that is captured entirely by Google, Meta, and telecom companies. Users see zero rupees. DPDP Act 2023 gives Indians data rights but no commercial infrastructure exists for individuals to exercise them.",
+   customers:"Individual data owners (all smartphone users), brands wanting consented first-party data (Zomato, Swiggy, Myntra), BFSI for KYC consent, NBFCs for credit scoring.",
+   unique:"India's DPDP Act creates the legal right for data monetization but no one has built the 'data wallet' — a DID (Decentralized Identity) + consent management + data marketplace stack. India is the first major democracy to legislate this, creating a first-mover window before GDPR-style fragmentation.",
+   revenue:"20% commission on user data sales. Brand data SaaS ₹10L/month. NBFC credit score API ₹50/query. Premium privacy vault subscription ₹99/month.",
+   mvp:"Build a mobile data wallet: users see what data apps collect + 'sell this data' toggle for 5 data categories. Partner with 2 brands for consented survey campaigns. Pay users directly via UPI. Prove 40% data opt-in rate.",
+   scale:"100K users Year 1. Partnership with major UPI app (PhonePe, Paytm) for distribution Year 2. Become India's AA (Account Aggregator) for personal data Year 3. Expand to EU (GDPR-compatible) Year 5.",
+   risks:[["User trust in new data concept","high"],["DPDP implementation rules delay","med"],["Big Tech lobbying","high"]],
+   unicorn:"India's 900M smartphone users × $10/year data value = $9B TAM. Being the infrastructure layer for India's personal data economy under the DPDP Act is a structural monopoly."},
+
+  // ── 32 ──
+  {num:32,name:"RoamSafe",tagline:"AI solo women traveler safety companion for India's 200M women with safety anxiety",cat:"AI",tags:["AI","Safety","Consumer"],
+   problem:"72% of Indian women report feeling unsafe in public spaces. Solo women travel is growing but 68% of women who want to travel solo don't because of safety concerns. Emergency SOS apps exist but don't address the pre-trip planning, real-time risk intelligence, and community verification gaps.",
+   customers:"Urban Indian women (22–40), solo women travelers, corporate women employees (duty of care), hotels and travel platforms (B2B safety integration).",
+   unique:"Combining real-time crowd-sourced safety ratings of specific streets/localities (not just cities) + AI-generated safe route planning + community verified accommodation + emergency AI companion that stays on call during risky moments — no product exists with all four pillars.",
+   revenue:"₹499/month subscription. B2B: ₹100/booking integration for OYO/Airbnb India safety badge. Corporate employee safety SaaS ₹5L/year. Insurance women traveler premium discount API.",
+   mvp:"Build a community-powered street safety rating map for 3 cities (Mumbai, Delhi, Bangalore). Add AI route planner that avoids low-rated areas. Launch in women's travel Facebook groups. Charge ₹199/month.",
+   scale:"10 cities Year 1. Integration with Ola/Uber/RedBus for journey safety overlay Year 2. Tourism ministry partnership for 'safe destination' certification Year 3. Expand to SE Asia (same anxiety profile) Year 5.",
+   risks:[["Safety data accuracy","med"],["Network effect for community data","high"],["Liability for false safety assurance","high"]],
+   unicorn:"200M+ Indian women. Safety anxiety is universal. At ₹499/month with 2M subscribers = ₹1,200Cr ARR. B2B hotel/travel platform integration could 3x this. Expanding to SE Asia (400M women) makes this global."},
+
+  // ── 33 ──
+  {num:33,name:"PrintPharma",tagline:"3D-printed personalized medicine dosing for India's polypharmacy elderly crisis",cat:"Biotech",tags:["Biotech","3D Printing","HealthTech"],
+   problem:"India's 140M elderly take an average of 7.2 medications daily. 40% are non-adherent due to complex schedules, wrong doses, and swallowing difficulty. Polypharmacy causes 30% of hospitalizations in the elderly. No personalized dose-form manufacturing exists below hospital-pharmacy scale.",
+   customers:"Geriatric care hospitals, elder care homes, palliative care programs, chronic disease management clinics, prescription insurance plans.",
+   unique:"FDA-approved 3D-printed pharmaceuticals now exist (Spritam, 2015) but the technology has never been miniaturized and localized for point-of-care pharmacy manufacturing. New biocompatible inkjet printers (2023) can print multi-drug tablets in custom dose combinations at pharmacy scale.",
+   revenue:"₹500/personalized monthly pill pack (dispensing fee). Hospital formulary SaaS ₹5L/year. API to EHR systems for auto-prescription generation. Insurance adherence incentive integration.",
+   mvp:"Partner with one geriatric hospital in Chennai/Mumbai. Acquire one pharmaceutical inkjet printer. Run 50 polypharmacy patients on personalized printed medication packs for 3 months. Measure adherence vs control.",
+   scale:"10 hospital partnerships Year 1. CDSCO compounding pharmacy license framework Year 2. Elder care chain partnerships Year 3. Expand to GCC (large expatriate elder population) Year 5.",
+   risks:[["CDSCO pharma manufacturing regulation","high"],["Printer calibration and quality control","high"],["Drug interaction liability","high"]],
+   unicorn:"140M Indian elderly × ₹500/month = ₹84,000Cr TAM. Adherence improvement reduces hospitalization by 30% — insurance companies will pay for this. International elderly populations (Japan, EU) are even larger."},
+
+  // ── 34 ──
+  {num:34,name:"GridSense",tagline:"AI predictive maintenance for India's 25L km power transmission network losing ₹1L Cr/year",cat:"AI",tags:["AI","IoT","Energy"],
+   problem:"India's power transmission network loses ₹1L Cr/year to Aggregate Technical & Commercial (AT&C) losses — much from preventable equipment failures (transformer burnouts, line snapping). Utilities do annual physical inspections. Failures are reactive, not predicted.",
+   customers:"State electricity boards (MSEDCL, KSEB, BESCOM), PGCIL, private DISCOMS (Tata Power, Adani Electricity), Rural Electrification Corporation.",
+   unique:"Combining vibration + thermal IoT sensors on distribution transformers + drone thermal imaging + ML for failure prediction across India's specific grid topology (very different from EU/US) hasn't been built. OEMs (ABB, Siemens) only sell monitoring for new equipment, not the aging 30-year-old installed base.",
+   revenue:"₹5L/substation/year SaaS monitoring. Drone inspection contract ₹2K/km. Preventive maintenance scheduling API. Insurance underwriting for grid failure risk.",
+   mvp:"Install vibration + temperature sensors on 100 distribution transformers in one DISCOM territory. Train failure prediction model on historical outage data. Prove 30-day advance failure prediction. Calculate DISCOM savings.",
+   scale:"5 DISCOMs Year 1. PGCIL national transmission monitoring contract Year 2. EV charging infrastructure predictive maintenance Year 3. Expand to Africa (rapidly expanding grid, zero maintenance tech) Year 5.",
+   risks:[["DISCOM procurement bureaucracy","high"],["Sensor installation on live lines","med"],["Data sharing from state utilities","med"]],
+   unicorn:"₹1L Cr annual loss to AT&C losses. If GridSense reduces this 20% for even 10 DISCOMs = ₹10,000Cr savings they'll pay ₹1,000Cr for. PGCIL alone manages 1.7L circuit km."},
+
+  // ── 35 ──
+  {num:35,name:"OceanMind",tagline:"AI navigation and weather assistant for India's 4M traditional fishermen fishing blind",cat:"AI",tags:["AI","Climate","Maritime"],
+   problem:"India's 4M traditional fishermen lose 1,800+ lives annually to sea accidents. 70% fish in 'traditional fishing zones' without real-time weather, wave height, or fish density intelligence. Expensive sonar and satellite systems are for industrial fleets, not single-boat artisanal fishers.",
+   customers:"Traditional fishing communities in Kerala, Tamil Nadu, Andhra Pradesh, Maharashtra; state fisheries departments, fishing cooperatives, NABARD, NCOG.",
+   unique:"A ₹3,000 rugged satellite communicator (Garmin inReach-class, now cheaper) + AI oceanographic model combining INCOIS data (Indian National Centre for Ocean Information Services, free) + wave forecast + fish-density prediction has never been packaged for artisanal fishers at ₹150/month.",
+   revenue:"₹150/boat/month SaaS subscription. State fisheries dept safety contract. Fish aggregation intelligence licensing to large fleets. Fisheries insurance actuarial data API.",
+   mvp:"Partner with one Kerala fishing cooperative. Provide 50 boats with low-cost satellite communicators. Build a fisherman WhatsApp bot for daily sea conditions + fish density zones. Measure trip success rate vs control group.",
+   scale:"1,000 boats Year 1. Kerala + Tamil Nadu state fisheries partnership Year 2. National PM Matsya Sampada Yojana integration Year 3. Expand to Indonesia, Bangladesh, Sri Lanka (same artisanal fishing profile) Year 5.",
+   risks:[["Fishing community adoption","med"],["Satellite communication cost","med"],["Weather model accuracy for specific zones","med"]],
+   unicorn:"4M boats × ₹150/month = ₹7,200Cr TAM in India. Indonesia alone has 2M fishing boats. Being the safety + intelligence OS for artisanal fishing globally is a $2B+ market."},
+
+  // ── 36 ──
+  {num:36,name:"TheraMirror",tagline:"AI mental health companion for India's 200M with mental illness and zero psychiatrists",cat:"HealthTech",tags:["AI","Mental Health","Consumer"],
+   problem:"India has 200M+ people needing mental health support but only 9,000 psychiatrists (1 per 100K people). 75% of people with mental illness receive no treatment. Existing mental health apps (YourDOST, iCall) are human-dependent and can't scale. Stigma prevents in-person help-seeking.",
+   customers:"Urban Indians (18–40) with anxiety/depression, HR managers at companies (employee assistance), insurance companies, corporate wellness programs.",
+   unique:"CBT (Cognitive Behavioral Therapy) is a structured, protocol-driven therapy that AI can execute with high fidelity — proven in Western research. No Indian startup has built a CBT-AI adapted for Indian cultural context (family pressures, joint family dynamics, arranged marriage stress, career anxiety specific to India).",
+   revenue:"₹499/month individual subscription. Corporate EAP ₹3,000/employee/year. Insurance mental health risk scoring API. Premium human therapist escalation on-demand.",
+   mvp:"Build a CBT-protocol AI companion trained on Indian mental health scenarios. Launch with 1,000 beta users. Measure PHQ-9 (depression) and GAD-7 (anxiety) scores at 8 weeks vs baseline. Publish outcomes.",
+   scale:"50K subscribers Year 1. Corporate EAP partnership (TCS, Infosys have 500K+ employees each) Year 2. NIMHANS academic validation Year 3. Expand to Indian diaspora (UK, US, UAE) Year 5.",
+   risks:[["Mental health crisis liability","high"],["Clinical validation requirement","med"],["User engagement retention","med"]],
+   unicorn:"200M untreated in India. Corporate EAP market alone is $500M. Insurance mental health integration could make this a ₹10,000Cr business. Diaspora expansion adds 30M more users globally."},
+
+  // ── 37 ──
+  {num:37,name:"BioChar.io",tagline:"Distributed biochar production-as-a-service turning India's farm stubble into carbon negative gold",cat:"Climate",tags:["Climate","Biotech","AgriTech"],
+   problem:"India burns 50M tonnes of crop stubble annually — causing Delhi's catastrophic air pollution (AQI 500+) while wasting a resource. Biochar from stubble improves soil fertility 40–60% and permanently sequesters carbon. But distributed biochar production has no logistics or carbon monetization infrastructure.",
+   customers:"Punjab/Haryana/UP farmers, biochar buyers (soil amendment market), carbon credit buyers, state pollution control boards, fertilizer companies.",
+   unique:"Mobile biochar kiln units (containerized, truck-transported) are now at $15,000 per unit — cheap enough for cooperative-scale deployment. No company has built the logistics layer + carbon credit monetization + soil amendment sales channel in one platform. The pieces exist; the integration doesn't.",
+   revenue:"₹2,000/tonne biochar production fee. Carbon credit issuance commission 12%. Biochar soil amendment product margin. Pollution avoidance credit (PCPIR scheme).",
+   mvp:"Acquire 2 mobile biochar kilns. Deploy in Punjab post-harvest. Process 500 tonnes of stubble. Sell biochar to organic farms in Delhi NCR. Apply for carbon credits and stubble burning avoidance certificates.",
+   scale:"50 mobile kilns Year 1. Stubble collection logistics partnership (existing tractor-trailer networks) Year 2. National PM KUSUM integration Year 3. Expand to Southeast Asia (rice straw burning crisis) Year 5.",
+   risks:[["Farmer cooperation for stubble collection","med"],["Biochar market development","med"],["Carbon credit verification","med"]],
+   unicorn:"50M tonnes of stubble × $50/tonne carbon value = $2.5B carbon opportunity. Biochar soil amendment market is $3B globally. India's AQI crisis creates political urgency and direct govt support."},
+
+  // ── 38 ──
+  {num:38,name:"PortalPass",tagline:"AI visa and immigration automation for India's 30M annual international travelers",cat:"AI",tags:["AI","Travel","Automation"],
+   problem:"Indian passport holders are the world's most visa-restricted — needing visas for 140+ countries. Average visa application involves 40+ document steps, 3–4 weeks wait, high rejection rates, and predatory agents charging ₹10,000–50,000 for services worth ₹500. 30M Indians travel internationally each year.",
+   customers:"Indian international travelers (urban, 25–50), Indian diaspora (OCI/PIO applications), study abroad students, corporate HR (employee visa management).",
+   unique:"AI that reads a person's specific travel history + passport type + purpose + destination and generates a custom document checklist + rejection risk score + automatic form fill + bank statement formatting — this is technically feasible now but no product does it for Indian applicants specifically.",
+   revenue:"₹999/visa application service. ₹4,999/year subscription (unlimited applications). B2B: corporate travel department SaaS ₹20L/year. Study abroad agency white-label.",
+   mvp:"Build a WhatsApp-based visa document checklist generator for top 20 destination countries. Offer free tool, charge ₹499 for 'visa coach' review. Partner with 3 study abroad counselors for student visas.",
+   scale:"100K applications Year 1. Partnership with Thomas Cook, Cox & Kings Year 2. Automated Schengen + US B1/B2 form completion Year 3. Expand to African (French, UK passport holders) Year 5.",
+   risks:[["Visa process changes by countries","med"],["Document fraud liability","high"],["Competition from incumbent travel agents","med"]],
+   unicorn:"30M Indian international travelers × ₹999 average = ₹300Cr ARR from individual users alone. B2B corporate travel management and study abroad are $2B+ additional markets."},
+
+  // ── 39 ──
+  {num:39,name:"EduMorph",tagline:"AI that converts any YouTube video or PDF into interactive vernacular microlearning for Bharat",cat:"EdTech",tags:["EdTech","AI","Vernacular"],
+   problem:"600M Indians have access to the internet but only 10% of valuable educational content is in Hindi or regional languages. YouTube has billions of hours of English content that is inaccessible to the majority. Translation apps exist but they don't make content interactive or pedagogically effective.",
+   customers:"NEET/JEE aspirants in Tier-2/3, govt exam (UPSC, SSC, banking) aspirants, vocational learners, coaching centers wanting to expand reach.",
+   unique:"URL-in → vernacular interactive microlesson-out: combining accurate Hindi/Tamil/Marathi transcription + summarization + quiz generation + spaced repetition scheduling in one automated pipeline is technically new in 2024. Existing edtech platforms create content manually — the automated content pipeline is the breakthrough.",
+   revenue:"₹299/month student subscription. ₹10L/year coaching center SaaS (white-label). UPSC/SSC prep vertical subscription. Govt DIKSHA integration grant.",
+   mvp:"Build a web tool: paste any YouTube URL → get a Hindi microlesson with 10 quiz questions + summary flashcards. Launch for UPSC aspirants on Reddit/Twitter. Charge ₹199/month. Measure 4-week retention.",
+   scale:"50K subscribers Year 1. Coaching center white-label product Year 2. 12 Indian languages Year 3. Certificate course vertical for vocational training Year 4. Africa (similar digital literacy gap) Year 5.",
+   risks:[["Content owner IP issues","high"],["LLM factual accuracy in vernacular","med"],["Strong incumbents (Unacademy, Physics Wallah)","high"]],
+   unicorn:"600M Hindi/regional language internet users. Govt exam prep market alone = ₹30,000Cr. Automated vernacular content pipeline is a category-defining infrastructure for learning in the Global South."},
+
+  // ── 40 ──
+  {num:40,name:"HeatShield",tagline:"AI extreme heat early warning + adaptive cooling for India's 500M outdoor workers",cat:"Climate",tags:["Climate","AI","WorkerSafety"],
+   problem:"India's wet bulb temperature is approaching human survivability thresholds in certain regions. 75M agricultural workers and 300M+ outdoor construction/delivery workers face lethal heat exposure. 2024 saw 40,000+ heat deaths in India. No employer tracking, no early warning, no adaptive cooling deployment system exists.",
+   customers:"Construction companies (L&T, Shapoorji), quick-commerce platforms (Blinkit, Zepto), state govt labour departments, NHRC, MSME Ministry, WHO.",
+   unique:"Combining hyperlocal heat stress index (wet bulb temperature at 100m resolution using satellite thermal data + humidity sensors) + worker wearable alerts + AI adaptive work scheduling (when to work/rest) + automated cooling station dispatch is a 2024-viable tech stack no one has deployed commercially.",
+   revenue:"₹200/worker/month SaaS to employers. State labour dept occupational safety contract. Insurance worker heatstroke risk API. WHO program implementation.",
+   mvp:"Deploy 20 heat stress sensors across one construction site in Ahmedabad (India's hottest major city). Build a site supervisor app: real-time heat alert + AI-recommended work/rest schedules. Demonstrate 0 heat incidents vs historical average.",
+   scale:"50 construction company clients Year 1. MoLE (Ministry of Labour and Employment) occupational safety mandate integration Year 2. Quick commerce delivery worker safety Year 3. Expand to Middle East (50M outdoor migrant workers) Year 5.",
+   risks:[["Employer liability avoidance motivation needed","med"],["Regulatory mandate timing","med"],["Sensor accuracy in extreme conditions","med"]],
+   unicorn:"500M+ outdoor workers globally. Middle East alone has 20M migrant workers doing outdoor construction. Climate change makes extreme heat an existential occupational health crisis — govt mandates will force adoption by 2027."},
+
+  // ── 41 ──
+  {num:41,name:"NanoSow",tagline:"AI-formulated nano-fertilizer delivery system cutting India's fertilizer subsidy waste by 60%",cat:"Climate",tags:["Climate","Biotech","AgriTech"],
+   problem:"India spends ₹2.5L Cr/year on fertilizer subsidies. 60% of applied urea is wasted — leaches into groundwater or evaporates before absorption. Nano-urea (IFFCO launched 2021) showed promise but has no AI-powered application optimization system telling farmers exactly when, where, and how much to apply.",
+   customers:"State agriculture depts, fertilizer companies (IFFCO, Coromandel), precision agriculture-adopting large farms, FPOs (Farmer Producer Organizations).",
+   unique:"Soil moisture + crop stage AI + satellite NDVI (crop health) combined with nano-fertilizer release kinetics modelling to generate field-specific application prescriptions is research-validated but no startup has built the commercial product layer on top of IFFCO's nano-urea platform.",
+   revenue:"₹3,999/farm/year precision application SaaS. IFFCO channel partnership (bundled with nano-urea). State agri-dept contract per FPO enrolled. Carbon credit from nitrogen use efficiency.",
+   mvp:"Partner with IFFCO's nano-urea pilot program. Build AI application prescription tool for 200 FPO-member farms using satellite + existing soil health card data. Measure yield improvement and fertilizer usage reduction.",
+   scale:"10 FPOs, 3 states Year 1. National FPO network integration (86K FPOs in India) Year 2. International: Bangladesh, Sri Lanka, Vietnam (rice-heavy economies) Year 4.",
+   risks:[["Farmer trust in AI prescriptions","med"],["IFFCO channel dependency","med"],["Scientific validation timeline","med"]],
+   unicorn:"₹2.5L Cr fertilizer subsidy. Even 5% reduction through AI optimization = ₹12,500Cr govt savings. Govt will pay handsomely. IFFCO has distribution to 50M farmers — partnership = instant scale."},
+
+  // ── 42 ──
+  {num:42,name:"NeighbourMind",tagline:"AI community intelligence platform for India's 80,000 Resident Welfare Associations",cat:"AI",tags:["AI","GovTech","Consumer"],
+   problem:"India's 80,000 RWAs manage 50M+ apartment residents with no digital infrastructure beyond WhatsApp groups. Maintenance payments, visitor management, security alerts, parking conflicts, and society votes all happen chaotically. ₹50,000Cr of RWA maintenance funds are managed in physical cash with zero accountability.",
+   customers:"RWAs in metro and Tier-2 city housing societies, property management companies, housing finance companies, local municipal corporations.",
+   unique:"Existing society management apps (MyGate, Apartment ADDA, NoBrokerHood) focus on security guard check-in and maintenance reminders. No product uses AI for predictive maintenance, fund fraud detection, community conflict resolution, and civic engagement integration with BMC/BBMP in one platform.",
+   revenue:"₹5,000/society/month SaaS. 1% transaction fee on maintenance payment processing. Property insurance integration. Municipal grievance filing automation SaaS to BMC.",
+   mvp:"Build one killer feature: AI-powered monthly maintenance expense analysis that flags anomalies and compares to similar-size societies. Launch for free in 50 Pune societies. Charge after proving fund savings.",
+   scale:"500 societies Year 1. Mumbai and Bangalore city-wide rollout Year 2. BMC/BBMP integration for automatic civic complaint filing Year 3. Expand to Dubai (large Indian diaspora, same governance gap) Year 5.",
+   risks:[["Committee member resistance to transparency","high"],["Competition from NoBrokerHood","med"],["Fragmented RWA decision-making","med"]],
+   unicorn:"80K RWAs × ₹5K/month = ₹48,000Cr ARR potential. ₹50,000Cr of maintenance funds processed = payment revenue. Municipal integration makes this a civic infrastructure play."},
+
+  // ── 43 ──
+  {num:43,name:"DroughtDAO",tagline:"Parametric drought insurance underwritten by satellite data for India's uninsured farmers",cat:"FinTech",tags:["FinTech","Climate","AI"],
+   problem:"Only 20% of Indian farmers have crop insurance. PMFBY (govt scheme) has a 3-year claim settlement delay and is riddled with fraud. Drought — the most common peril — is particularly hard to verify. 80% of uninsured farmers lose everything every drought year.",
+   customers:"Uninsured small/marginal farmers, NABARD, microfinance institutions (MFIs), state governments, international reinsurers (Munich Re, Swiss Re).",
+   unique:"Parametric insurance (paying when satellite-measured rainfall drops below threshold — no claim form needed) has been proven in Kenya (Kilimo Salama) and Ethiopia. India hasn't deployed it at scale because the satellite-to-payment pipeline + vernacular onboarding + IRDAI compliance hasn't been packaged together.",
+   revenue:"8% premium margin on ₹2,000–5,000/farmer/season policies. Reinsurance structuring fee. NABARD co-insurance government premium subsidy processing. MFI white-label insurance product.",
+   mvp:"Partner with IRDAI-registered insurer for the carrier. Build satellite rainfall trigger model for one drought-prone district (Bundelkhand). Sell parametric policies to 1,000 farmers via local MFI. Demonstrate automatic payout in next drought event.",
+   scale:"5 districts, 50K farmers Year 1. IRDAI regulatory sandbox program Year 2. PMFBY supplemental product Year 3. Expand to Sub-Saharan Africa (same drought + uninsured farmer crisis) Year 5.",
+   risks:[["IRDAI regulatory approval","high"],["Basis risk (satellite vs actual loss mismatch)","med"],["Farmer trust in parametric product","med"]],
+   unicorn:"600M uninsured farmers globally. India's uninsured farming population alone = 100M farmers. International reinsurers are desperate for India exposure. Munich Re/Swiss Re would fund this."},
+
+  // ── 44 ──
+  {num:44,name:"UrbanRoot",tagline:"AI-powered vertical micro-farm as a service for India's dark restaurant kitchens",cat:"Climate",tags:["Climate","Robotics","AgriTech"],
+   problem:"India's dark kitchen industry has 5,000+ ghost restaurants spending ₹15,000–40,000/month on fresh vegetables that are low quality, inconsistently priced, and sourced from supply chains with 30–40% spoilage. Premium ingredients (microgreens, herbs, specialty vegetables) are nearly impossible to source fresh in Tier-2 cities.",
+   customers:"Dark kitchen operators, premium restaurant chains (Taj, ITC Hotels), cloud kitchen startups (Rebel Foods, Biryani By Kilo), corporate cafeterias, hospital food services.",
+   unique:"A shipping-container-sized automated hydroponic + LED grow system with AI nutrient + lighting optimization, deployed on-premise at dark kitchens as a monthly lease, with the startup handling maintenance and crop replacement — this product-as-a-service model for restaurant produce has never been deployed in India.",
+   revenue:"₹50,000/month lease per container unit (all-inclusive: equipment, nutrients, maintenance, crop replacement). Fresh produce upsell at 40% margin. Carbon credit from urban farming displacement of refrigerated trucking.",
+   mvp:"Build one 20ft container automated hydroponic unit. Install in one Rebel Foods dark kitchen in Bangalore. Supply fresh herbs + microgreens at premium to their chef. Measure produce quality, yield, and chef satisfaction. Calculate cost vs traditional supply.",
+   scale:"20 units in Bangalore Year 1. Rebel Foods/Freshmenu national partnership Year 2. Hospital food service + corporate cafeteria vertical Year 3. Franchise the unit design for export Year 5.",
+   risks:[["Hardware development cost","high"],["Crop failure risk","med"],["Client operational integration","med"]],
+   unicorn:"5,000 dark kitchens × ₹50K/month = ₹300Cr ARR from this segment alone. Corporate cafeterias (TCS campus alone feeds 200K people) × hospital food service = ₹3,000Cr total market."},
+
+  // ── 45 ──
+  {num:45,name:"SafarBot",tagline:"AI-powered offline rail travel assistant for India's 14M daily train passengers in network dead zones",cat:"AI",tags:["AI","Travel","Vernacular"],
+   problem:"India's 14M daily rail passengers spend 4–24 hours in train journeys with poor mobile connectivity, no reliable PNR status updates, no train delay predictions, and no intelligent information access in vernacular languages. Railway stations in remote areas have no WhatsApp support.",
+   customers:"Daily rail commuters, long-distance passengers (especially Tier-2/3 city travellers), IRCTC, railway station managers.",
+   unique:"An offline-capable, edge AI assistant (downloadable before journey) that works without internet — combining cached railway timetables + predictive delay model (train delay patterns are highly predictable from historical data) + vernacular information + railway regulation knowledge into one offline app — does not exist.",
+   revenue:"₹49/trip premium assistant subscription. IRCTC white-label integration revenue. Railway station kiosk licensing. Advertising to captive 4–24 hour travel audience.",
+   mvp:"Build an offline app for Indian railways: PNR status caching, delay prediction (from NTES historical data), food ordering information, station facilities guide — works offline. Launch on IRCTC's app partnership program. Free with ₹49 premium unlock.",
+   scale:"1M downloads Year 1. IRCTC official partnership Year 2. Integration with Zomato train ordering Year 3. Expand to Indonesia, Bangladesh rail networks Year 5.",
+   risks:[["IRCTC data access","med"],["Monetization with low willingness to pay","med"],["Railway policy changes","low"]],
+   unicorn:"14M daily passengers × 365 days = 5.1B trip-experiences annually. IRCTC's app has 100M+ users. Being the official AI assistant embedded in IRCTC's app = instant 100M+ user acquisition."},
+
+  // ── 46 ──
+  {num:46,name:"ChemIntel",tagline:"AI chemical reaction safety and regulatory compliance platform for India's 50,000 MSME chemical units",cat:"AI",tags:["AI","Cybersecurity","Manufacturing"],
+   problem:"India's 50,000 small chemical units in MSME sector operate without proper chemical safety protocols or regulatory compliance systems. 300+ chemical accidents in India annually. REACH, GHS, BIS, and state PCB regulations are complex and constantly changing. MSMEs pay consultants ₹2–5L/year for compliance filings.",
+   customers:"MSME chemical manufacturers in Vapi, Ankleshwar, Surat, Ambernath clusters; chemical exporters needing EU REACH compliance; PCB inspection departments.",
+   unique:"A chemical safety AI that combines MSDS database + SDS generation + regulatory compliance auto-filing + accident risk prediction from chemical inventory combinations — no product exists for the Indian MSME chemical sector despite its massive scale.",
+   revenue:"₹30,000/unit/year SaaS. EU REACH compliance filing service ₹2L/year. PCB inspection digital audit SaaS. Chemical insurance underwriting risk API.",
+   mvp:"Build SDS (Safety Data Sheet) auto-generator for 500 common Indian chemicals. Offer free to 100 Vapi MSME units. Charge ₹15,000/year for full compliance dashboard. Partner with Gujarat PCB for digital inspection integration.",
+   scale:"1,000 MSME clients Year 1. MoEFCC integration for pollution compliance Year 2. EU REACH export compliance vertical Year 3. Expand to Bangladesh (garment chemical compliance) + Indonesia Year 5.",
+   risks:[["Liability for safety advice","high"],["Chemical data accuracy","med"],["MSME payment capacity","med"]],
+   unicorn:"50K Indian chemical MSMEs × ₹30K/year = ₹1,500Cr TAM. EU REACH compliance for Indian exporters is a ₹3,000Cr+ market (₹2L/company × 15K exporters). Becoming the regulatory compliance infrastructure for Indian chemicals is an infrastructure moat."},
+
+  // ── 47 ──
+  {num:47,name:"SoundScout",tagline:"AI music discovery and licensing platform for India's 500M vernacular music listeners",cat:"AI",tags:["AI","Creative Economy","FinTech"],
+   problem:"India has the world's largest under-monetized music market. 500M vernacular (Bhojpuri, Marathi, Tamil folk, Rajasthani) music listeners exist but their artists earn near zero from streaming. Spotify/JioSaavn pay $0.001/stream for languages below algorithmic threshold. Brand sync licensing for vernacular music is non-existent.",
+   customers:"Vernacular music artists (50M+), regional brands wanting authentic advertising music, folk music archives, OTT platforms, state culture departments.",
+   unique:"A vernacular music metadata engine that identifies folk/regional tracks, tags them by mood/occasion/dialect, presents them to brands for sync licensing, handles royalty distribution via UPI — this entire pipeline is absent. Bollywood sync licensing exists; vernacular is a dead zone.",
+   revenue:"30% sync licensing commission. ₹499/month artist SaaS for distribution + royalty tracking. Brand music subscription ₹5L/year. State culture dept digitization grant.",
+   mvp:"Index 100,000 vernacular tracks from YouTube (public). Build mood/occasion tagging AI. Create a 'brand music brief' → vernacular track matching tool. Land 5 regional brand sync deals. Pay artists directly via UPI.",
+   scale:"1M tracks indexed Year 1. JioSaavn/Wynk editorial integration Year 2. Direct brand marketplace Year 3. Export to West Africa (Afrobeats same dynamic) and Indonesia Year 5.",
+   risks:[["Copyright clarity on folk music","high"],["Artist onboarding","med"],["Brand willingness to use vernacular","med"]],
+   unicorn:"India's music streaming market = ₹5,000Cr. Sync licensing for vernacular is a $500M untapped market. Building the Spotify of Indian folk music with licensing infrastructure is an IP platform that gets acquired by Sony/UMG."},
+
+  // ── 48 ──
+  {num:48,name:"TruckMind",tagline:"AI co-pilot for India's 7M truck drivers to fight fatigue, accidents and highway crime",cat:"AI",tags:["AI","Safety","Logistics"],
+   problem:"India has the world's worst road accident rate — 1.6L deaths in 2023, 40% involving trucks. Driver fatigue causes 60% of highway truck accidents. Truckers also face highway crime (robbery, violence) with no emergency response. ₹70,000Cr of cargo is damaged or stolen annually.",
+   customers:"Trucking fleet operators (TCI, VRL, GATI), logistics companies (Delhivery, Shadowfax), highway toll authorities, truck insurance companies, cargo shippers.",
+   unique:"A ₹5,000 dashcam with edge AI detecting driver drowsiness (eye-blink frequency, head-bob), automatic emergency brake alert, highway crime SOS with live video streaming, and AI route optimization combining live highway crime maps + fuel pricing — no product does all four for India's trucking industry at affordable price.",
+   revenue:"₹3,000/truck/year SaaS. Hardware margin ₹5,000/device. Insurance telematics discount API. Fleet operator premium analytics ₹50K/month.",
+   mvp:"Deploy dashcam + fatigue detection AI in 50 long-haul trucks for one fleet operator. Demonstrate 0 fatigue incidents vs historical average over 3 months. Calculate insurance savings. Publish ROI case study.",
+   scale:"500 fleet clients Year 1. TCI/GATI national partnership Year 2. Govt VAHAN integration for insurance discount mandate Year 3. Expand to Bangladesh, Nepal, Indonesia Year 5.",
+   risks:[["Hardware distribution at scale","med"],["Driver privacy concerns","med"],["Fleet operator price sensitivity","med"]],
+   unicorn:"7M trucks × ₹3K/year = ₹21,000Cr SaaS TAM. Insurance telematics market = ₹5,000Cr. If govt mandates fleet safety devices (as it did for school buses), this is a ₹50,000Cr compulsory market."},
+
+  // ── 49 ──
+  {num:49,name:"NeutronKart",tagline:"Marketplace for India's nuclear-adjacent industrial radiation measurement services",cat:"AI",tags:["AI","DeepTech","Industrial"],
+   problem:"India's nuclear program, 7,500+ radiation-using industries (hospitals, mining, NDT, food irradiation), and emerging nuclear energy expansion require 200,000+ annual radiation safety calibrations and measurements. Currently, there are only 47 AERB-approved calibration labs — 6–18 month waiting periods are common, causing regulatory violations and safety risks.",
+   customers:"Hospitals (radiation oncology, nuclear medicine), NDT companies, nuclear power plants, AERB inspectors, mining companies, food irradiation facilities.",
+   unique:"Building a marketplace connecting 200 independent radiation safety officers + calibration labs + AERB compliance workflow into one platform — solving a niche industrial safety crisis no VC has spotted because it requires both nuclear safety domain knowledge and tech execution.",
+   revenue:"15% marketplace commission on calibration bookings. ₹1L/year AERB compliance SaaS per facility. AERB inspection scheduling platform. Equipment rental marketplace.",
+   mvp:"Build a booking platform for India's 47 AERB labs. Add AERB compliance document management. Launch to 200 hospital radiation departments. Charge ₹5,000/booking facilitation.",
+   scale:"500 facility clients Year 1. AERB official compliance portal integration Year 2. Expand to calibration equipment marketplace Year 3. IAEA developing country program Year 5.",
+   risks:[["AERB regulatory navigation","high"],["Niche domain expertise required","med"],["Slow scaling market","med"]],
+   unicorn:"India's nuclear sector will be 100GW by 2047 (PM's target). 7,500 radiation-using industries = $500M calibration services market growing 25%/year. Nuclear compliance is non-negotiable — guaranteed demand."},
+
+  // ── 50 ──
+  {num:50,name:"LegacyMesh",tagline:"AI-powered intergenerational wealth transfer and estate planning for India's 80M middle-class families",cat:"FinTech",tags:["FinTech","AI","LegalTech"],
+   problem:"India has ₹350L Cr of middle-class household wealth with no proper estate planning. 78% of Indians die intestate (no will). Family disputes over inheritance destroy ₹20,000Cr of wealth annually. Online will-writing tools exist but ignore the complexity of Indian HUF (Hindu Undivided Family) law, nomination vs inheritance conflicts, and joint property disputes.",
+   customers:"Urban and semi-urban Indian families (35–65) with assets above ₹50L, NRIs with India property, business families with succession planning needs.",
+   unique:"Indian inheritance law is uniquely complex: HUF provisions, different succession laws per religion (Hindu, Muslim, Christian), nomination ≠ inheritance (a legal trap 95% of Indians don't understand), and joint property complications — no product addresses all of these in a consumer-friendly AI flow.",
+   revenue:"₹9,999 one-time will + estate plan (5x lawyer cost). ₹1,999/year digital vault subscription. B2B: BFSI upsell integration (HDFC, Axis Bank) ₹30L/year. NRI estate management premium ₹25,000/year.",
+   mvp:"Build an AI interview flow that determines the correct succession law applicable to a user + generates a valid will template accordingly. Get one enrolled lawyer to certify. Sell at ₹4,999. Target NRIs first (they have the most urgency + ability to pay).",
+   scale:"10K will plans Year 1. Bank partnership for 'will with your FD' bundling Year 2. AI probate assistance Year 3. Expand to Indian diaspora globally (UK, US, UAE) Year 5.",
+   risks:[["Legal accuracy liability","high"],["Consumer trust in AI legal documents","med"],["Religious law complexity","high"]],
+   unicorn:"80M Indian middle-class families needing estate planning at ₹10K average = ₹8L Cr opportunity. NRI market (32M NRIs with India assets) at ₹25K/year premium = ₹8,000Cr annually. Bank distribution partnerships deliver instant scale."}
+];
+
+// ─── RENDER ───
+function render(list) {
+  const grid = document.getElementById('grid');
+  grid.innerHTML = list.map(idea => {
+    const p = PALETTE[idea.cat] || PALETTE.AI;
+    const risks = idea.risks.map(([r, l]) =>
+      `<span class="risk-pill r-${l}">${r}</span>`
+    ).join('');
+    const tags = idea.tags.map(t =>
+      `<span class="tag" style="background:${p.tagBg};color:${p.tagText}">${t}</span>`
+    ).join('');
+    return `
+    <div class="card" data-cat="${idea.cat}" data-search="${(idea.name+idea.tagline+idea.problem+idea.tags.join(' ')).toLowerCase()}">
+      <div class="card-stripe" style="background:${p.stripe}"></div>
+      <div class="card-head">
+        <div class="card-num-badge" style="background:${p.badge};color:${p.badgeText}">${String(idea.num).padStart(2,'0')}</div>
+        <div class="card-head-text">
+          <div class="card-name" style="color:${p.stripe}">${idea.name}</div>
+          <div class="card-tagline">${idea.tagline}</div>
+          <div class="card-tags">${tags}</div>
+        </div>
+      </div>
+      <div class="card-sections">
+        <div class="section-row">
+          <div class="s-label">Problem It Solves</div>
+          <div class="s-text">${idea.problem}</div>
+        </div>
+        <div class="section-row">
+          <div class="s-label">Target Customers</div>
+          <div class="s-text">${idea.customers}</div>
+        </div>
+        <div class="section-row">
+          <div class="s-label">Why It's Unique</div>
+          <div class="s-text">${idea.unique}</div>
+        </div>
+        <div class="section-row">
+          <div class="s-label">Revenue Model</div>
+          <div class="s-text">${idea.revenue}</div>
+        </div>
+
+        <button class="acc-toggle" onclick="toggleAcc(this)">
+          <span>MVP · Scale · Risk · Unicorn Path</span>
+          <span class="acc-arrow">▼</span>
+        </button>
+        <div class="acc-body">
+          <div class="section-row">
+            <div class="s-label">MVP Version</div>
+            <div class="s-text">${idea.mvp}</div>
+          </div>
+          <div class="section-row">
+            <div class="s-label">Scalability Plan</div>
+            <div class="s-text">${idea.scale}</div>
+          </div>
+          <div class="section-row">
+            <div class="s-label">Risk Factors</div>
+            <div class="s-text">${risks}</div>
+          </div>
+          <div class="unicorn-row">
+            <span class="u-icon">🦄</span>
+            <div>
+              <div class="u-label">Unicorn Path</div>
+              <div class="u-text">${idea.unicorn}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+  document.getElementById('resultsCount').textContent = `${list.length} idea${list.length !== 1 ? 's' : ''}`;
+}
+
+// Initial render
+render(ideas);
+
+// Filter
+document.getElementById('filterBar').addEventListener('click', e => {
+  const btn = e.target.closest('.filter-btn');
+  if (!btn) return;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  applyFilters();
+});
+
+// Search
+document.getElementById('searchInput').addEventListener('input', applyFilters);
+
+function applyFilters() {
+  const cat = document.querySelector('.filter-btn.active').dataset.cat;
+  const q = document.getElementById('searchInput').value.toLowerCase().trim();
+  const filtered = ideas.filter(i => {
+    const catMatch = cat === 'all' || i.cat === cat || i.tags.includes(cat);
+    const qMatch = !q || i.name.toLowerCase().includes(q) || i.tagline.toLowerCase().includes(q) || i.problem.toLowerCase().includes(q) || i.tags.join(' ').toLowerCase().includes(q);
+    return catMatch && qMatch;
+  });
+  render(filtered);
+}
+
+// Accordion
+function toggleAcc(btn) {
+  const body = btn.nextElementSibling;
+  const arrow = btn.querySelector('.acc-arrow');
+  body.classList.toggle('open');
+  arrow.classList.toggle('open');
+}
+
+// Scroll top
+window.addEventListener('scroll', () => {
+  const st = document.getElementById('scrollTop');
+  if (window.scrollY > 600) st.classList.add('visible');
+  else st.classList.remove('visible');
+});
+</script>
+</body>
+</html>
